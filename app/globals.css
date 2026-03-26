@@ -1,128 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Stack+Sans+Headline:wght@200..700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+/*
+  ─────────────────────────────────────────────────────────────
+  AASHA DESIGN TOKENS  —  Tailwind v4 CSS-first configuration
+  All theme tokens live here. No tailwind.config.ts needed.
+  ─────────────────────────────────────────────────────────────
+*/
+@theme {
+  /* ── Brand Colours ── */
+  --color-primary: #f0c040;
+  --color-primary-light: #ffd250;
+  --color-primary-dark: #d4a832;
+  --color-primary-fg: #111111;
 
-:root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.809 0.105 251.813);
-    --chart-2: oklch(0.623 0.214 259.815);
-    --chart-3: oklch(0.546 0.245 262.881);
-    --chart-4: oklch(0.488 0.243 264.376);
-    --chart-5: oklch(0.424 0.199 265.638);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+  --color-brand-dark: #0e2218;
+  --color-brand-800: #112a1a;
+  --color-brand-700: #1a3a26;
+  --color-brand-600: #1e4d32;
+
+  --color-blue-dark: #1e3a8a;
+  --color-blue-main: #1d4ed8;
+  --color-blue-light: #3b82f6;
+
+  /* ── Typography ── */
+  --font-headline: "Stack Sans Headline", sans-serif;
+  --font-stack-sans: "Stack Sans Headline", sans-serif;
+  --font-signature: "Momo Signature", cursive;
+
+  /* ── Animations ── */
+  --animate-dot-pulse: dotPulse 2.4s ease-in-out infinite;
+  --animate-hero-up-1: heroUp 0.7s 0.05s ease both;
+  --animate-hero-up-2: heroUp 0.7s 0.15s ease both;
+  --animate-hero-up-3: heroUp 0.7s 0.25s ease both;
+  --animate-hero-up-4: heroUp 0.7s 0.35s ease both;
+  --animate-hero-up-5: heroUp 0.7s 0.45s ease both;
+
+  /* ── Box Shadows ── */
+  --shadow-btn-yellow: 0 4px 18px rgba(240, 192, 64, 0.32);
+  --shadow-btn-yellow-hover: 0 6px 26px rgba(240, 192, 64, 0.52);
+  --shadow-dropdown: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.809 0.105 251.813);
-    --chart-2: oklch(0.623 0.214 259.815);
-    --chart-3: oklch(0.546 0.245 262.881);
-    --chart-4: oklch(0.488 0.243 264.376);
-    --chart-5: oklch(0.424 0.199 265.638);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+/*
+  ─────────────────────────────────────────────────────────────
+  CUSTOM KEYFRAMES
+  (Defined in CSS because @theme only holds static tokens)
+  ─────────────────────────────────────────────────────────────
+*/
+@keyframes dotPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(240, 192, 64, 0.55);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(240, 192, 64, 0);
+  }
 }
 
-@theme inline {
-    --font-sans: var(--font-sans);
-    --color-sidebar-ring: var(--sidebar-ring);
-    --color-sidebar-border: var(--sidebar-border);
-    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-    --color-sidebar-accent: var(--sidebar-accent);
-    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-    --color-sidebar-primary: var(--sidebar-primary);
-    --color-sidebar-foreground: var(--sidebar-foreground);
-    --color-sidebar: var(--sidebar);
-    --color-chart-5: var(--chart-5);
-    --color-chart-4: var(--chart-4);
-    --color-chart-3: var(--chart-3);
-    --color-chart-2: var(--chart-2);
-    --color-chart-1: var(--chart-1);
-    --color-ring: var(--ring);
-    --color-input: var(--input);
-    --color-border: var(--border);
-    --color-destructive: var(--destructive);
-    --color-accent-foreground: var(--accent-foreground);
-    --color-accent: var(--accent);
-    --color-muted-foreground: var(--muted-foreground);
-    --color-muted: var(--muted);
-    --color-secondary-foreground: var(--secondary-foreground);
-    --color-secondary: var(--secondary);
-    --color-primary-foreground: var(--primary-foreground);
-    --color-primary: var(--primary);
-    --color-popover-foreground: var(--popover-foreground);
-    --color-popover: var(--popover);
-    --color-card-foreground: var(--card-foreground);
-    --color-card: var(--card);
-    --color-foreground: var(--foreground);
-    --color-background: var(--background);
-    --radius-sm: calc(var(--radius) * 0.6);
-    --radius-md: calc(var(--radius) * 0.8);
-    --radius-lg: var(--radius);
-    --radius-xl: calc(var(--radius) * 1.4);
-    --radius-2xl: calc(var(--radius) * 1.8);
-    --radius-3xl: calc(var(--radius) * 2.2);
-    --radius-4xl: calc(var(--radius) * 2.6);
+@keyframes heroUp {
+  from {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+/*
+  ─────────────────────────────────────────────────────────────
+  BASE LAYER RESETS
+  ─────────────────────────────────────────────────────────────
+*/
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-    }
-  body {
-    @apply bg-background text-foreground;
-    }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   html {
-    @apply font-sans;
-    }
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-brand-dark);
+    color: #ffffff;
+    font-family: var(--font-stack-sans);
+    overflow-x: hidden;
+  }
+
+  /* ── Responsive Global Typography ── */
+  h1, .text-h1 {
+    font-family: var(--font-headline);
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 800;
+  }
+  @media (min-width: 980px) and (max-width: 1024px) {
+    h1, .text-h1 { font-size: 48px; }
+  }
+  @media (min-width: 1025px) {
+    h1, .text-h1 { font-size: 62px; }
+  }
+
+  h2, .text-h2 {
+    font-family: var(--font-headline);
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  @media (min-width: 768px) {
+    h2, .text-h2 { font-size: 48px; }
+  }
+  @media (min-width: 1024px) {
+    h2, .text-h2 { font-size: 52px; }
+  }
+
+  h3, .text-h3 {
+    font-family: var(--font-headline);
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  @media (min-width: 768px) {
+    h3, .text-h3 { font-size: 26px; }
+  }
+  @media (min-width: 1024px) {
+    h3, .text-h3 { font-size: 28px; }
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-brand-dark);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-brand-700);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+}
+
+/*
+  ─────────────────────────────────────────────────────────────
+  COMPONENT UTILITIES
+  (Shared patterns reused across components)
+  ─────────────────────────────────────────────────────────────
+*/
+@layer components {
+
+  /* Desktop nav link underline effect */
+  .nav-link-underline {
+    position: relative;
+  }
+
+  .nav-link-underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width 0.25s ease;
+  }
+
+  .nav-link-underline:hover::after {
+    width: 100%;
+  }
 }

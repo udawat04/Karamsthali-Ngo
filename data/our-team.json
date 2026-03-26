@@ -1,0 +1,87 @@
+[
+  {
+    "id": "cameron-williamson",
+    "name": "Cameron Williamson",
+    "role": "Program Director",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+    "bgImage": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1920&auto=format&fit=crop",
+    "bio": [
+      "Cameron leads our community health initiatives with dedication and expertise. With a background in public health and years of hands-on experience in community outreach, he coordinates health camps, wellness workshops, and preventive care programs to ensure every community member receives the support they need.",
+      "He believes that access to healthcare is a fundamental right, and he works tirelessly to bridge gaps between medical services and communities that need them most. Cameron's approach combines professional expertise with empathy and cultural understanding, ensuring that every program is effective, inclusive, and sustainable."
+    ],
+    "socials": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "whatsapp": "#"
+    }
+  },
+  {
+    "id": "dianne-russell",
+    "name": "Dianne Russell",
+    "role": "Volunteer Coordinator",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop",
+    "bgImage": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1920&auto=format&fit=crop",
+    "bio": [
+      "Dianne brings a wealth of experience in community building and volunteer management. Her passion for bringing people together for a common cause has led to some of our most successful community engagement programs.",
+      "She believes that every volunteer has a unique contribution to make, and she works closely with our team to ensure everyone feels valued and impactful. Her dedication to fostering a supportive environment is at the heart of our mission."
+    ],
+    "socials": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "whatsapp": "#"
+    }
+  },
+  {
+    "id": "wade-warren",
+    "name": "Wade Warren",
+    "role": "Impact & Monitoring Lead",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop",
+    "bgImage": "https://images.unsplash.com/photo-1454165833762-02652294270f?q=80&w=1920&auto=format&fit=crop",
+    "bio": [
+      "Wade is dedicated to ensuring that our programs are measuring and achieving their intended impact. With a background in data analysis and social research, he brings a rigorous approach to our project monitoring and evaluation.",
+      "He believes that transparency and accountability are key to sustainable growth. By tracking our progress and learning from the data, he helps our team continuously improve our initiatives and deliver even greater value to the communities we serve."
+    ],
+    "socials": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "whatsapp": "#"
+    }
+  },
+  {
+    "id": "robert-fox",
+    "name": "Robert Fox",
+    "role": "Finance Manager",
+    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop",
+    "bgImage": "https://images.unsplash.com/photo-1454165833762-02652294270f?q=80&w=1920&auto=format&fit=crop",
+    "bio": [
+      "Robert ensures the financial stability and transparency of our organization. With years of experience in NGO finance, he brings a prudent and ethical approach to managing our resources and ensuring every dollar is used efficiently.",
+      "His commitment to fiscal responsibility allows us to maximize our impact and maintain the trust of our donors and partners. Robert's expertise is essential to securing the long-term sustainability of our programs."
+    ],
+    "socials": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "whatsapp": "#"
+    }
+  },
+  {
+    "id": "jane-cooper",
+    "name": "Jane Cooper",
+    "role": "Communication Officer",
+    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
+    "bgImage": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1920&auto=format&fit=crop",
+    "bio": [
+      "Jane tells the stories of our impact and connects our organization with the wider world. With a background in journalism and digital media, she ensures our message is clear, compelling, and reaches the people who need it most.",
+      "She believes in the power of storytelling to drive empathy and action. By amplifying the voices of the communities we serve, Jane helps build a stronger movement for positive social change."
+    ],
+    "socials": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "whatsapp": "#"
+    }
+  }
+]
