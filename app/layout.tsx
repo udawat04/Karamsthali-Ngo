@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import CustomCursor from "@/components/common/CustomCursor";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Aasha — Empowering Communities, Inspiring Change",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <CustomCursor />
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>

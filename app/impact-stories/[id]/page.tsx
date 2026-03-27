@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import impactStories from "@/data/impact-stories.json";
 import Navbar2 from "@/components/common/Navbar2";
+import PageHeader from "@/components/common/PageHeader";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -17,7 +18,7 @@ export default async function ImpactStoryPage({ params }: PageProps) {
 
   return (
     <>
-      <Navbar2 />
+      {/* <Navbar2 /> */}
       <main className="bg-white min-h-screen">
         
         {/* Standard Clean Hero Section (No Overlaps) */}

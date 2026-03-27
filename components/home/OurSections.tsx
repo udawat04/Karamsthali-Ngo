@@ -1,74 +1,50 @@
 "use client";
 
-import { ArrowUpRight } from "lucide-react";
+import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+// Import the specific icons from lucide-react
+import { 
+  ArrowUpRight, 
+  Target, 
+  Users, 
+  ShieldCheck, 
+  HeartPulse, 
+  Flower2, 
+  Leaf 
+} from "lucide-react"; 
 import servicesData from "@/data/services.json";
 
+// Map your data indices to Lucide components
 const ICONS = [
-  // Community Development
-  <svg key={0} className="size-6 text-[#0e2218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-  </svg>,
-  // Education & Awareness
-  <svg key={1} className="size-6 text-[#0e2218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-    <path d="M6 12v5c3 3 9 3 12 0v-5" />
-  </svg>,
-  // Human Rights Advocacy
-  <svg key={2} className="size-6 text-[#0e2218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <polyline points="9 12 11 14 15 10" />
-  </svg>,
-  // Healthcare & Nutrition
-  <svg key={3} className="size-6 text-[#0e2218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-  </svg>,
-  // Women Empowerment
-  <svg key={4} className="size-6 text-[#0e2218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <circle cx="12" cy="8" r="4" />
-    <path d="M12 12v9" />
-    <path d="M8 17h8" />
-  </svg>,
-  // Environmental Sustainability
-  <svg key={5} className="size-6 text-[#0e2218]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <path d="M17 8C8 10 5.9 16.17 3.82 22m9.87-4.64c3.94-1.59 6.78-4.13 6.78-9.36A7 7 0 0 0 12 2C6 2 4 8.5 4 12c0 1.5.5 3 1 4" />
-  </svg>,
+  Target,      // Women Empowerment
+  Users,       // Meaningful Social Impact
+  ShieldCheck, // Social Justice & Advocacy
+  HeartPulse,  // Healthcare
+  Flower2,     // Community
+  Leaf         // Environmental
 ];
 
-interface OurSectionsProps {
-  limit?: number;
-  showViewAll?: boolean;
-}
-
-export default function OurSections({ limit, showViewAll = false }: OurSectionsProps) {
-  const allItems = servicesData.map((s, i) => ({ ...s, text: s.cardText, icon: ICONS[i] }));
+export default function OurSections({ limit, showViewAll = false }) {
+  const allItems = servicesData.map((s, i) => ({
+    ...s,
+    text: s.cardText,
+    IconComponent: ICONS[i % ICONS.length], // Assign the Component
+  }));
+  
   const items = limit ? allItems.slice(0, limit) : allItems;
 
   return (
-    <section className="py-16 md:py-24 bg-[#FAF9F6] overflow-hidden">
-      {/* ── Custom Clip-Path Reveal from Bottom-Left ── */}
-      <style>{`
-        .card-reveal-overlay {
-          /* Starts at bottom-left corner */
-          clip-path: inset(100% 100% 0% 0%);
-          transition: clip-path 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .group:hover .card-reveal-overlay {
-          clip-path: inset(0% 0% 0% 0%);
-        }
-      `}</style>
-
+    <section className="py-16 md:py-24 bg-[#FAF9F6]">
       <div className="max-w-[1320px] mx-auto px-5 sm:px-8 lg:px-10">
-
-        {/* Header */}
-        <div className="text-center max-w-[750px] mx-auto mb-12 md:mb-20">
+        
+        {/* Header Section */}
+        <div className="text-center max-w-[750px] mx-auto mb-16">
           <div className="inline-flex items-center gap-2 bg-white border border-zinc-200 rounded-full pl-2 pr-5 py-1.5 mb-6 shadow-sm">
             <span className="size-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs md:text-[0.85rem] font-bold text-brand-dark uppercase tracking-wider font-stack-sans">Our Services</span>
+            <span className="text-xs md:text-[0.85rem] font-bold text-brand-dark uppercase tracking-wider font-stack-sans">
+              Our Services
+            </span>
           </div>
           <h2 className="font-headline font-extrabold text-brand-dark text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight leading-tight">
             Our Actions for <span className="text-primary">Social Change</span>
@@ -80,69 +56,63 @@ export default function OurSections({ limit, showViewAll = false }: OurSectionsP
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {items.map((action, index) => (
-            <Link
-              key={index}
-              href={`/services/${action.slug}`}
-              className={cn(
-                "rounded-[2.5rem] p-8 md:p-10 flex flex-col justify-between min-h-[400px] md:h-[450px] relative overflow-hidden group transition-all duration-700 cursor-pointer",
-                "bg-white border border-zinc-100 hover:shadow-2xl hover:shadow-brand-dark/5",
-              )}
-            >
-              {/* Image reveal layer - Reveal from Bottom-Left */}
-              <div
-                className="card-reveal-overlay absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: `url('${action.bgImage}')` }}
-              />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {items.map((action, index) => {
+            const Icon = action.IconComponent; // Extract component for rendering
+            
+            return (
+              <div 
+                key={index} 
+                className="group flex flex-col h-full rounded-[1.5rem] overflow-hidden bg-white border border-zinc-100 shadow-lg transition-all duration-500 hover:shadow-2xl"
+              >
+                <Link href={`/services/${action.slug}`} className="flex flex-col flex-grow">
+                  {/* Image Container */}
+                  <div className="relative aspect-[16/10] w-full overflow-hidden">
+                    <Image
+                      src={action.bgImage}
+                      alt={action.title}
+                      fill
+                      className="object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+                    />
+                  </div>
 
-              {/* Subtle Linear Overlay (Optional - removes the solid green/dark blocks for a clear image) */}
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-[1]" />
+                  {/* Card Content */}
+                  <div className="flex flex-col flex-grow p-8">
+                    {/* Flower Opening Icon Container */}
+                    <div className="relative size-16 mb-6 flex items-center justify-center shrink-0 rounded-full bg-[#fdd835] overflow-hidden">
+                      {/* Dark circle expanding from center on CARD hover */}
+                      <div className="absolute inset-0 bg-brand-dark scale-0 rounded-full transition-transform duration-500 ease-in-out origin-center group-hover:scale-100" />
+                      
+                      {/* Lucide Icon */}
+                      <Icon 
+                        className="size-6 relative z-10 text-brand-dark transition-colors duration-500 group-hover:text-white" 
+                        strokeWidth={2}
+                      />
+                    </div>
 
-              {/* Content */}
-              <div className="relative z-10 flex flex-col h-full pointer-events-none">
-                {/* Icon */}
-                <div className="size-14 md:size-16 rounded-full bg-primary flex items-center justify-center mb-8 md:mb-10 shadow-lg shrink-0 transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-6">
-                  {action.icon}
-                </div>
+                    <h3 className="font-headline font-bold text-2xl mb-4 text-brand-dark">
+                      {action.title}
+                    </h3>
+                    <p className="font-stack-sans text-brand-dark/70 text-base leading-relaxed line-clamp-3">
+                      {action.text}
+                    </p>
+                  </div>
 
-                <div className="mt-auto">
-                  <h3 className="font-headline font-bold text-2xl md:text-3xl mb-4 leading-tight text-brand-dark group-hover:text-white transition-colors duration-500">
-                    {action.title}
-                  </h3>
-                  <p className="font-stack-sans leading-relaxed text-sm md:text-base mb-8 line-clamp-3 text-brand-dark/60 group-hover:text-white/90 transition-colors duration-500">
-                    {action.text}
-                  </p>
-                </div>
-
-                {/* Footer link */}
-                <div className="pt-6 mt-auto border-t border-brand-dark/10 group-hover:border-white/20 transition-colors duration-500">
-                  <span className="inline-flex items-center gap-2 font-extrabold text-sm md:text-base text-brand-dark group-hover:text-white transition-colors duration-500">
-                    Read More
-                    <ArrowUpRight className="size-4 md:size-5 transition-transform duration-500 group-hover:rotate-45" />
-                  </span>
-                </div>
+                  {/* Button Footer - Independent Hover */}
+                  <div className="relative w-full py-5 px-6 bg-[#fdd835] overflow-hidden group/btn">
+                    {/* Background fill on BUTTON hover only */}
+                    <div className="absolute inset-0 bg-brand-dark translate-x-[-101%] transition-transform duration-500 ease-in-out group-hover/btn:translate-x-0" />
+                    
+                    <span className="relative z-10 flex items-center justify-center gap-2 font-bold text-brand-dark transition-colors duration-500 group-hover/btn:text-white">
+                      Read More
+                      <ArrowUpRight className="size-5 transition-transform duration-500 group-hover/btn:rotate-45" />
+                    </span>
+                  </div>
+                </Link>
               </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
-
-        {/* View All Button */}
-        {showViewAll && (
-          <div className="flex justify-center mt-12 md:mt-16">
-            <Link
-              href="/services"
-              className="group relative overflow-hidden inline-flex items-center gap-2 bg-primary text-brand-dark font-bold px-8 py-4 rounded-lg transition-all duration-300 shadow-xl"
-            >
-              <span className="absolute inset-0 bg-brand-dark w-0 group-hover:w-full transition-all duration-500 ease-in-out z-0" />
-              <span className="relative z-10 group-hover:text-white flex items-center gap-2 transition-colors duration-500">
-                View All Services
-                <ArrowUpRight className="w-5 h-5 shrink-0 transition-transform duration-500 group-hover:rotate-45" strokeWidth={2.5} />
-              </span>
-            </Link>
-          </div>
-        )}
-
       </div>
     </section>
   );

@@ -11,17 +11,15 @@ export const metadata = {
 export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[#fafafa]">
-     
-
-      {/* Page Hero */}
-     <PageHeader
-             title="Our Services"
-             breadcrumbs={[
-               { label: 'Home', href: '/' },
-               { label: 'Services' }
-             ]}
-             backgroundImage="https://images.unsplash.com/photo-1517433585673-8a22256e4a49?q=80&w=2070&auto=format&fit=crop"
-           />
+      <PageHeader
+        title="Our Programs & Services"
+        highlightedWord="Programs"
+        subtitle="Explore our comprehensive range of services — from education and healthcare to women empowerment and environmental sustainability."
+        breadcrumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Services' }
+        ]}
+      />
 
       {/* All 6 service cards */}
       <OurSections />

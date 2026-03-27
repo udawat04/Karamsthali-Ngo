@@ -9,12 +9,13 @@ const Team = () => {
   return (
     <main className="bg-[#FAF9F6] min-h-screen">
       <PageHeader 
-        title="Our Team"
+        title="Our Expert Team"
+        highlightedWord="Team"
+        subtitle="Meet the passionate professionals and visionary leaders behind Karamsthali NGO's impactful community initiatives."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Team' }
         ]}
-        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56196c273e8?q=80&w=2070&auto=format&fit=crop"
       />
 
       <section className="py-24 lg:py-32 overflow-hidden font-stack-sans">

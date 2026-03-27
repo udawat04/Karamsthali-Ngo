@@ -13,7 +13,9 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
       <PageHeader 
-        title="About Us"
+        title="About Our Mission"
+        highlightedWord="Mission"
+        subtitle="Learn about our journey, our values, and the passionate team working tirelessly to empower marginalized communities across Rajasthan."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About Us' }

@@ -5,7 +5,7 @@ import OurActions from "@/components/home/OurSections";
 import FocusedActions from "@/components/home/FocusedActions";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import NarrativeSection from "@/components/home/NarrativeSection";
-import Insights from "@/components/home/Insights";
+import LatestEvents from "@/components/home/LatestEvents";
 import HeroSection from "@/components/home/Hero";
 import BiggestContributor from "@/components/home/BiggestContributor";
 import TestimonialSection from "@/components/home/TestimonialSection";
@@ -22,7 +22,7 @@ export default function HomePage() {
       <OurBenefits />
       <NarrativeSection />
       <BiggestContributor />
-      <Insights />
+      <LatestEvents />
       <FocusedActions />
       <TestimonialSection />
       <ContactSection />
