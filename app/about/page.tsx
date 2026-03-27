@@ -23,8 +23,8 @@ export default function AboutPage() {
       <AboutUsSpotlight />
       <OurApproach />
       <NGOPrograms />
-      <OurImpact />
       <TeamSection />
+      <OurImpact />
       <FocusedActions/>
       <FAQ />
     </main>

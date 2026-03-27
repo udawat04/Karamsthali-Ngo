@@ -19,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {/* CustomCursor lives here — renders on every page in the app */}
         <CustomCursor />
         <Navbar />
         {children}

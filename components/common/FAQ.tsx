@@ -2,17 +2,8 @@
 
 import React, { useState } from 'react';
 import { Plus, Minus, ArrowUpRight } from 'lucide-react';
+import faqData from '@/data/faq-data.json';
 
-const faqData = [
-  { question: "Q1. What is the mission of your NGO?", answer: "Our mission is to empower communities and promote sustainable development through education, healthcare, and environmental conservation initiatives." },
-  { question: "Q2. How can I get involved with your organization?", answer: "You can get involved by volunteering, organizing fundraisers, making donations, or partnering with us for corporate social responsibility programs." },
-  { question: "Q3. Can I volunteer without prior experience?", answer: "Yes, we welcome volunteers from all backgrounds. Training and guidance are provided to ensure everyone can contribute meaningfully." },
-  { question: "Q4. Where does your organization operate?", answer: "We currently operate in various regions across the country, focusing on marginalized communities and underserved rural areas." },
-  { question: "Q5. How do you measure your impact?", answer: "We measure our impact through rigorous data collection, community feedback, and third-party evaluations to ensure transparency and accountability." },
-  { question: "Q6. How do you select the communities you work with?", answer: "We partner with local leaders and conduct thorough needs assessments to identify communities where our interventions can make the greatest difference." },
-  { question: "Q7. How can I stay updated on your work?", answer: "You can subscribe to our monthly newsletter, follow us on our social media channels, or visit the 'Updates' section on our website." },
-  { question: "Q8. Can I support a specific cause or program?", answer: "Absolutely. When making a donation, you can specify the program or cause you would like your funds to be directed towards." },
-];
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(4); // Default to Q5 open to match design if preferred, or null. null is better for init.
@@ -57,6 +48,7 @@ export default function FAQ() {
               Contact Us Now
               <ArrowUpRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
             </button>
+            
           </div>
 
         </div>

@@ -7,17 +7,17 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark text-white pt-24 pb-12 relative overflow-hidden font-stack-sans">
+    <footer className="bg-brand-dark text-white pt-14 pb-4 relative overflow-hidden font-stack-sans">
       {/* Background Graphic/Pattern */}
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -z-10 translate-x-1/4 translate-y-1/4" />
       
       <div className="max-w-[1320px] mx-auto px-5 md:px-7 lg:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-24 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-24 mb-10">
           
           {/* Column 1: About & Socials */}
           <div className="flex flex-col gap-8">
             <Link href="/" className="inline-block shrink-0">
-               <img src="/karm-logo.png" alt="Aasha Logo" className="h-20 w-auto max-md:h-12" />
+               <img src="/karma-logo-3.png" alt="Aasha Logo" className="h-22 w-auto max-md:h-12" />
             </Link>
             <p className="text-white/60 text-[1.05rem] leading-relaxed max-w-sm">
               We bring people together to challenge injustice, amplify unheard voices, and drive collective action that addresses inequality and builds a more inclusive world.
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright section */}
-        <div className="pt-10 border-t border-white/8 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="pt-4 border-t border-white/8 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-white/40 text-sm font-medium">
             © {new Date().getFullYear()} Aasha NGO. All Rights Reserved.
           </p>

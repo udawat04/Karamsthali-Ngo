@@ -6,6 +6,7 @@ export default function CustomCursor() {
   const dotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Disable on mobile or if no fine pointer (touch devices)
     if (
       typeof window === "undefined" ||
       window.innerWidth <= 767 ||
@@ -28,6 +29,25 @@ export default function CustomCursor() {
     const onMove = (e: MouseEvent) => {
       mx = e.clientX;
       my = e.clientY;
+
+      /**
+       * VISIBILITY CHECK
+       * We check the hover target directly on every move.
+       * This is the most reliable way as it bypasses event propagation issues.
+       */
+      const target = e.target as HTMLElement;
+      if (target && target.closest) {
+        // Hide if over Navbar, Footer, any Link/Button, or input elements
+        const isForbidden = !!target.closest(
+          "header, footer, nav, a, button, [role='button'], input, textarea, select, [role='dialog']"
+        );
+        
+        if (isForbidden) {
+          dot.dataset.hidden = "1";
+        } else {
+          delete dot.dataset.hidden;
+        }
+      }
     };
 
     // Lerp factor — 0.15 means the dot trails ~100ms behind the real cursor
@@ -44,29 +64,9 @@ export default function CustomCursor() {
     document.addEventListener("mousemove", onMove);
     rafId = requestAnimationFrame(animate);
 
-    // Grow dot slightly when hovering interactive elements
-    const targets = document.querySelectorAll<HTMLElement>(
-      "a, button, [role='button']",
-    );
-    const grow = () => {
-      dot.dataset.hov = "1";
-    };
-    const shrink = () => {
-      delete dot.dataset.hov;
-    };
-
-    targets.forEach((el) => {
-      el.addEventListener("mouseenter", grow);
-      el.addEventListener("mouseleave", shrink);
-    });
-
     return () => {
       document.removeEventListener("mousemove", onMove);
       cancelAnimationFrame(rafId);
-      targets.forEach((el) => {
-        el.removeEventListener("mouseenter", grow);
-        el.removeEventListener("mouseleave", shrink);
-      });
     };
   }, []);
 
@@ -80,9 +80,10 @@ export default function CustomCursor() {
         "hidden md:block",
         // Default: 10px yellow dot
         "size-2.5 rounded-full bg-primary",
-        // Grows slightly on hover over interactive elements
-        "transition-[width,height] duration-150 ease-out",
-        "data-[hov]:size-4 data-[hov]:bg-primary/70",
+        // Smooth fade-out duration
+        "transition-opacity duration-150 ease-out",
+        // Hidden when data-hidden is set
+        "data-[hidden]:opacity-0",
       ].join(" ")}
     />
   );

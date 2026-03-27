@@ -87,13 +87,13 @@ export default function HeroSection() {
     <section className="relative w-full min-h-fit  bg-[#0a1811] overflow-hidden">
       <Swiper
         modules={[Navigation]}
-        // speed={1000}
-        // autoplay={{ delay: 6000, disableOnInteraction: false }}
+        speed={1000}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         loop={false}
         className="w-full h-full"
       >
         {SLIDES.map((slide, index) => (
-          <SwiperSlide key={index} className="relative w-full h-auto pb-4">
+          <SwiperSlide key={index} className="relative w-full h-auto pb-4" style={{height:"auto !important"}}>
             {/* Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -104,7 +104,7 @@ export default function HeroSection() {
             </div>
 
             {/* Main Content Container */}
-            <div className="relative z-10 w-full  max-w-7xl mx-auto px-6 flex items-center pt-24 pb-12 xl:pt-28">
+            <div className="relative z-10 w-full  max-w-7xl mx-auto px-6 flex items-center pt-24 pb-20 xl:pt-28">
               <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
                 
                 {/* Left Side: Text */}

@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 
 export default function TeamSection() {
   return (
-    <section className="py-20 lg:py-32 bg-white overflow-hidden font-stack-sans">
+    <section className="py-20 lg:py-20 bg-white overflow-hidden font-stack-sans">
       <div className="container mx-auto px-4 lg:px-8 max-w-[1320px]">
         {/* Header */}
         <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">

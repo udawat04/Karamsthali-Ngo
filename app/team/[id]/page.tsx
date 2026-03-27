@@ -22,7 +22,7 @@ export default async function TeamMemberPage({ params }: PageProps) {
         backgroundImage={member.bgImage}
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Team", href: "/about" },
+          { label: "Team", href: "/team" },
           { label: member.name }
         ]}
       />

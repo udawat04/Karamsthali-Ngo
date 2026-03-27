@@ -1,135 +1,164 @@
 "use client"
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules';
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import Image from 'next/image';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 const ContributorData = [
   {
-    name: 'Bhuvan Bam',
-    role: 'CEO, Y-Combinator',
-    image: '',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo ducimus natus iusto voluptatibus voluptas rem ullam a, consequatur aut!'
+    name: 'Melinda French Gates',
+    role: 'Co-Chair, Gates Foundation',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2070&auto=format&fit=crop',
+    description: 'Philanthropy is about using every tool at our disposal—our voices, our networks, and our advocacy—to ensure every person has the chance to live a healthy life.'
   },
   {
-    name: 'Aashish Chanchlani',
-    role: 'CEO, YouTube',
-    image: '',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo ducimus natus iusto voluptatibus voluptas rem ullam a, consequatur aut!'  
+    name: 'Azim Premji',
+    role: 'Founder, Azim Premji Foundation',
+    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2070&auto=format&fit=crop',
+    description: 'The real strength of an organization lies in its values. Investing in education is the most powerful way to build a sustainable and equitable future.'
   },
   {
+    name: 'Ratan Tata',
+    role: 'Chairman Emeritus, Tata Trusts',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop',
+    description: 'Upskilling our youth and providing quality healthcare are the two pillars of nation-building. We must strive to touch the lives of those left behind.'
+  },
+   {
+
     name: 'Carry Minati',
+
     role: 'CEO, Big-Boss',
-    image: '',
+
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop',
+
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo ducimus natus iusto voluptatibus voluptas rem ullam a, consequatur aut!'  
+
   }
 ];
 
 export default function BiggestContributor() {
   return (
-    <section className="relative py-20 lg:py-32 w-full bg-brand-dark font-stack-sans overflow-hidden z-0">
+    <section className="relative py-16 lg:py-24 w-full bg-[#0e2218] font-stack-sans overflow-hidden">
       
-      {/* Premium Glow Effect */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] max-w-[800px] h-[80vw] max-h-[800px] bg-primary/5 rounded-full blur-[100px] md:blur-[140px] pointer-events-none -z-10" />
+      {/* --- Google Anti-Gravity Inspired Pattern --- */}
+      <div className="absolute inset-0 opacity-[0.15] pointer-events-none"
+           style={{
+             backgroundImage: `linear-gradient(#f0c040 1px, transparent 1px), linear-gradient(90deg, #f0c040 1px, transparent 1px)`,
+             backgroundSize: '40px 40px',
+             maskImage: 'radial-gradient(circle at center, black, transparent 80%)'
+           }} 
+      />
 
-      <div className="max-w-[1320px] mx-auto px-5 md:px-7 lg:px-10 relative z-10">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 relative z-10">
         
-        {/* Section Heading */}
-        <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-h2 font-bold text-white tracking-tight">
+        {/* Compact Header */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="w-10 h-[2px] bg-[#f0c040]"></span>
+              <span className="text-[#f0c040] text-xs font-bold uppercase tracking-[0.2em]">Our Impact Partners</span>
+            </div>
+            <h2 className="text-h2 font-bold text-white tracking-tight">
+
             Hear from our <span className="relative inline-block pb-2">
+
               Biggest
+
               <span className="absolute left-0 bottom-0 w-full h-1 md:h-1.5 bg-primary rounded-full"></span>
+
             </span> Contributors
+
           </h2>
-        </div>
-
-        {/* Carousel Container */}
-        <div className="max-w-6xl mx-auto relative px-0">
-          <Swiper
-            modules={[Pagination, Navigation, Autoplay]}
-            pagination={{ 
-              el: '.swiper-pagination-custom',
-              clickable: true,
-            }}
-            navigation={{
-              prevEl: '.swiper-button-prev-custom',
-              nextEl: '.swiper-button-next-custom',
-            }}
-            loop={true}
-            autoplay={{ delay: 6000, disableOnInteraction: false }}
-            spaceBetween={40}
-            className="w-full"
-            style={{
-              '--swiper-pagination-color': 'var(--color-primary, #f0c040)',
-              '--swiper-pagination-bullet-inactive-color': '#ffffff',
-              '--swiper-pagination-bullet-inactive-opacity': '0.2',
-              '--swiper-pagination-bullet-size': '12px',
-              '--swiper-pagination-bullet-horizontal-gap': '8px',
-            } as React.CSSProperties}
-          >
-            {ContributorData.map((contributor, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 lg:gap-24 w-full">
-                  
-                  {/* Image Container */}
-                  <div className="w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 shrink-0 rounded-full p-2 border border-white/20 bg-white/5 relative flex items-center justify-center shadow-[0_0_50px_rgba(0,0,0,0.15)]">
-                    <div className="w-full h-full rounded-full overflow-hidden relative bg-brand-dark/30 flex items-center justify-center">
-                      {contributor.image ? (
-                        <Image 
-                          src={contributor.image} 
-                          alt={contributor.name} 
-                          fill
-                          className="object-cover"
-                          sizes="(max-width: 768px) 224px, (max-width: 1024px) 288px, 320px"
-                        />
-                      ) : (
-                        <span className="text-white/30 text-xl font-medium tracking-wider">No Image</span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Text Content */}
-                  <div className="flex-1 max-w-2xl text-center md:text-left flex flex-col items-center md:items-start">
-                    <p className="text-white/90 text-[1.15rem] md:text-2xl lg:text-[1.75rem] leading-[1.6] md:leading-[1.7] italic mb-8 md:mb-10 font-light">
-                      &ldquo;{contributor.description}&rdquo;
-                    </p>
-                    
-                    <h3 className="text-h3 font-bold text-primary mb-2 md:mb-3">
-                      {contributor.name}
-                    </h3>
-                    
-                    <span className="text-white/70 text-sm md:text-base tracking-[0.2em] uppercase font-bold">
-                      {contributor.role}
-                    </span>
-                  </div>
-                  
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Bottom Center Controls (Pagination + Navigation) */}
-          <div className="flex items-center justify-center gap-6 md:gap-8 mt-16 md:mt-24">
-            <button className="swiper-button-prev-custom w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-primary text-brand-dark hover:bg-white hover:text-brand-dark hover:scale-105 transition-all shadow-btn-yellow z-10 shrink-0">
-              <ChevronLeft className="w-6 h-6 md:w-7 md:h-7" strokeWidth={2.5} />
-            </button>
-            
-            {/* Custom Pagination Container */}
-            <div className="swiper-pagination-custom flex items-center justify-center min-w-[80px]" />
-            
-            <button className="swiper-button-next-custom w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full bg-primary text-brand-dark hover:bg-white hover:text-brand-dark hover:scale-105 transition-all shadow-btn-yellow z-10 shrink-0">
-              <ChevronRight className="w-6 h-6 md:w-7 md:h-7" strokeWidth={2.5} />
-            </button>
           </div>
           
+          <div className="hidden md:flex items-center gap-3">
+            <button className="swiper-prev-btn w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#f0c040] hover:text-[#0e2218] transition-all duration-300 cursor-pointer">
+              <ChevronLeft size={20} />
+            </button>
+            <button className="swiper-next-btn w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-[#f0c040] hover:text-[#0e2218] transition-all duration-300 cursor-pointer">
+              <ChevronRight size={20} />
+            </button>
+          </div>
         </div>
+
+        <Swiper
+          modules={[Pagination, Navigation, Autoplay, EffectFade]}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          navigation={{ prevEl: '.swiper-prev-btn', nextEl: '.swiper-next-btn' }}
+          pagination={{ clickable: true, el: '.swiper-pagination-bars' }}
+          loop={true}
+          autoplay={{ delay: 7000 }}
+          className="w-full"
+        >
+          {ContributorData.map((person, index) => (
+            <SwiperSlide key={index}>
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+                
+                {/* Scaled Image Side (Optimized for Laptop) */}
+                <div className="lg:col-span-4 relative">
+                  <div className="relative aspect-[3.5/4] max-w-[340px] mx-auto lg:mx-0 rounded-[1.5rem] overflow-hidden border border-white/10 shadow-2xl">
+                    <Image 
+                      src={person.image} 
+                      alt={person.name} 
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0e2218]/60 via-transparent to-transparent" />
+                  </div>
+                  <div className="absolute -bottom-4 -right-2 bg-[#f0c040] p-4 rounded-xl shadow-xl hidden lg:block">
+                    <Quote size={24} className="text-[#0e2218]" fill="currentColor" />
+                  </div>
+                </div>
+
+                {/* Scaled Text Side */}
+                <div className="lg:col-span-8 flex flex-col justify-center text-center lg:text-left">
+                  <p className="text-white/90 text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed mb-8 max-w-3xl">
+                    &ldquo;{person.description}&rdquo;
+                  </p>
+                  
+                  <div>
+                    <h3 className="text-[#f0c040] text-2xl md:text-3xl font-bold mb-1">
+                      {person.name}
+                    </h3>
+                    <p className="text-white/40 text-sm md:text-base font-bold tracking-widest uppercase">
+                      {person.role}
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Navigation & Pagination */}
+        <div className="flex flex-col items-center mt-12">
+          <div className="swiper-pagination-bars flex gap-2 !static" />
+        </div>
+
       </div>
+
+      <style jsx global>{`
+        .swiper-pagination-bars .swiper-pagination-bullet {
+          width: 30px;
+          height: 3px;
+          border-radius: 1px;
+          background: rgba(255,255,255,0.1) !important;
+          opacity: 1;
+          transition: all 0.4s ease;
+        }
+        .swiper-pagination-bars .swiper-pagination-bullet-active {
+          background: #f0c040 !important;
+          width: 60px;
+        }
+      `}</style>
     </section>
   );
 }
