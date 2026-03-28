@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Utensils, TreeDeciduous, HeartHandshake, PawPrint } from "lucide-react";
+import Link from "next/link";
+import { Utensils, TreeDeciduous, HeartHandshake, PawPrint, ArrowUpRight } from "lucide-react";
 
 const workItems = [
   {
@@ -24,7 +25,7 @@ const workItems = [
 
 export default function AboutUsSpotlight() {
   return (
-    <section className="py-20 lg:py-32 bg-[#f4f4f0] overflow-hidden">
+    <section className="py-20 lg:py-32 bg-white overflow-hidden">
       <div className="max-w-[1320px] mx-auto px-6 md:px-8 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-24 items-center">
 
@@ -107,9 +108,19 @@ export default function AboutUsSpotlight() {
               ))}
             </div>
 
-            <button className="bg-primary text-brand-dark px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-primary-light transition-all duration-300">
+           <Link 
+            href="/services" 
+            className="group relative overflow-hidden inline-flex items-center gap-2 bg-primary text-brand-dark font-bold px-7 py-4 rounded-lg shadow-btn-yellow hover:shadow-none transition-all duration-300 mt-6 md:mt-8"
+          >
+            {/* Background Sweep from Left to Right */}
+            <span className="absolute inset-0 bg-brand-dark w-0 group-hover:w-full transition-all duration-300 ease-out z-0" />
+            
+            {/* Button Content */}
+            <span className="relative z-10 group-hover:text-white flex items-center gap-2 transition-colors duration-300">
               Learn More About
-            </button>
+              <ArrowUpRight className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:rotate-45" strokeWidth={2.5} />
+            </span>
+          </Link>
           </div>
 
         </div>

@@ -147,8 +147,9 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: var(--color-brand-700);
+    background: var(--color-primary);
     border-radius: 9999px;
+    height: 50px;
   }
 
   ::-webkit-scrollbar-thumb:hover {

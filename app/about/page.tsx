@@ -8,6 +8,7 @@ import NGOPrograms from '@/components/about/NGOPrograms';
 import TeamSection from '@/components/about/TeamSection';
 import FocusedActions from '@/components/home/FocusedActions';
 import FAQ from '@/components/common/FAQ';
+import ContactSection from '@/components/contact/ContactSection';
 
 export default function AboutPage() {
   return (
@@ -23,11 +24,12 @@ export default function AboutPage() {
       />
       
       <AboutUsSpotlight />
-      <OurApproach />
       <NGOPrograms />
-      <TeamSection />
+      <OurApproach />
       <OurImpact />
+      <TeamSection />
       <FocusedActions/>
+      <ContactSection/>
       <FAQ />
     </main>
   );

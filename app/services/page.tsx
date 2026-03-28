@@ -1,6 +1,7 @@
 import OurSections from "@/components/home/OurSections";
 import ContactSection from "@/components/contact/ContactSection";
 import PageHeader from "@/components/common/PageHeader";
+import FAQ from "@/components/common/FAQ";
 
 export const metadata = {
   title: "Our Services | Karamsthali NGO",
@@ -22,9 +23,10 @@ export default function ServicesPage() {
       />
 
       {/* All 6 service cards */}
-      <OurSections />
+      <OurSections limit={6} />
 
       <ContactSection />
+      <FAQ />   
     </main>
   );
 }

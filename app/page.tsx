@@ -11,6 +11,7 @@ import BiggestContributor from "@/components/home/BiggestContributor";
 import TestimonialSection from "@/components/home/TestimonialSection";
 import FAQ from "@/components/common/FAQ";
 import ContactSection from "@/components/contact/ContactSection";
+import ImpactStories from "@/components/home/ImpactStories";
 
 export default function HomePage() {
   return (
@@ -19,10 +20,11 @@ export default function HomePage() {
       <MarqueeSection />
       <OurActions limit={3} showViewAll />
       <WhyChooseUs />
-      <OurBenefits />
-      <NarrativeSection />
-      <BiggestContributor />
       <LatestEvents />
+      <NarrativeSection />
+      {/* <ImpactStories /> */}
+      <OurBenefits />
+      <BiggestContributor />
       <FocusedActions />
       <TestimonialSection />
       <ContactSection />

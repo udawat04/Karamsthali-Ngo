@@ -4,6 +4,8 @@ import EventsFeatured from "@/components/events/EventsFeatured";
 import EventsGrid from "@/components/events/EventsGrid";
 import EventsCTA from "@/components/events/EventsCTA";
 import EventsHero from "@/components/events/EventsHero";
+import ContactSection from "@/components/contact/ContactSection";
+import FAQ from "@/components/common/FAQ";
 
 export const metadata = {
   title: "Events | Karamsthali NGO",
@@ -28,6 +30,8 @@ export default function EventsPage() {
       <EventsFeatured events={featuredEvents} />
       <EventsGrid events={eventsData} />
       <EventsCTA />
+      <ContactSection/>
+      <FAQ/>
     </main>
   );
 }

@@ -37,7 +37,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           { label: "Services", href: "/services" },
           { label: service.title },
         ]}
-        backgroundImage={service.bgImage}
+        
       />
 
       {/* ── Two-column layout: sticky left + scrollable right ── */}

@@ -91,7 +91,7 @@ export default function Navbar() {
                 className={cn(
                   "px-4 py-2.5 rounded-lg",
                   "font-stack-sans font-medium text-[0.9rem] ",
-                  scrolled ? "text-white/90 hover:text-primary" : "text-brand-dark hover:text-primary",
+                  scrolled ? "text-white/90 hover:text-primary" : "text-primary hover:text-primary",
                   "transition-colors duration-200 whitespace-nowrap",
                 )}
               >

@@ -18,6 +18,8 @@ import eventsData from "@/data/events.json";
 import eventsDetail from "@/data/events-detail.json";
 import Navbar2 from "@/components/common/Navbar2";
 import ShareButton from "@/components/events/ShareButton";
+import ContactSection from "@/components/contact/ContactSection";
+import FAQ from "@/components/common/FAQ";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type AgendaItem = { time: string; activity: string };
@@ -530,7 +532,7 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
         {/* ═══════════════════════════════════════════════════════
             BOTTOM CTA STRIP
         ════════════════════════════════════════════════════════ */}
-        <section className="bg-brand-dark py-14 md:py-16 relative overflow-hidden">
+        <section className="bg-brand-dark py-8 md:py-8 relative overflow-hidden">
           {/* Dot pattern */}
           <div
             className="absolute inset-0 pointer-events-none"
@@ -571,6 +573,9 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
             </div>
           </div>
         </section>
+
+        <ContactSection/>
+        
 
       </main>
     </>

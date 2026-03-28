@@ -25,7 +25,15 @@ const ICONS = [
   Leaf         // Environmental
 ];
 
-export default function OurSections({ limit, showViewAll = false }) {
+interface OurSectionsProps {
+  limit?: number;
+  showViewAll?: boolean;
+}
+
+export default function OurSections({
+  limit,
+  showViewAll = false,
+}: OurSectionsProps) {
   const allItems = servicesData.map((s, i) => ({
     ...s,
     text: s.cardText,
