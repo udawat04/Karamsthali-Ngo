@@ -87,38 +87,46 @@ export default function HeroSection() {
     <section className="relative w-full min-h-fit  bg-[#0a1811] overflow-hidden">
       <Swiper
         modules={[Navigation]}
-        // speed={1000}
-        // autoplay={{ delay: 6000, disableOnInteraction: false }}
+        speed={1000}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
         loop={false}
         className="w-full h-full"
       >
         {SLIDES.map((slide, index) => (
-          <SwiperSlide key={index} className="relative w-full h-auto pb-4">
+          <SwiperSlide
+            key={index}
+            className="relative w-full h-auto pb-4"
+            style={{ height: "auto !important" }}
+          >
             {/* Background Image */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url('${slide.bg}')` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0a1811] via-[#0a1811]/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#3a7d5b9e] via-[#41775ce8]/80 to-transparent" />
               <div className="absolute inset-0 bg-black/30" />
             </div>
 
             {/* Main Content Container */}
-            <div className="relative z-10 w-full  max-w-7xl mx-auto px-6 flex items-center pt-24 pb-12 xl:pt-28">
+            <div className="relative z-10 w-full  max-w-7xl mx-auto px-6 flex items-center pt-24 pb-20 xl:pt-28">
               <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-                
                 {/* Left Side: Text */}
                 <div className="flex flex-col items-start space-y-6 lg:space-y-8">
                   <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm p-1 pr-4 rounded-full border border-white/10">
                     <div className="flex -space-x-3">
                       {VOLUNTEERS.map((v, i) => (
-                        <Avatar key={i} className="size-8 border-2 border-[#0a1811]">
+                        <Avatar
+                          key={i}
+                          className="size-8 border-2 border-[#0a1811]"
+                        >
                           <AvatarImage src={v.src} />
                           <AvatarFallback>{v.fallback}</AvatarFallback>
                         </Avatar>
                       ))}
                     </div>
-                    <span className="text-xs lg:text-sm font-medium text-white/90">Join 180+ Active Volunteers</span>
+                    <span className="text-xs lg:text-sm font-medium text-white/90">
+                      Join 180+ Active Volunteers
+                    </span>
                   </div>
 
                   <h1 className="text-h1 font-extrabold font-headline text-white leading-[1.1] whitespace-pre-line">
@@ -130,8 +138,8 @@ export default function HeroSection() {
                   </p>
 
                   <div className="flex flex-wrap items-center gap-6">
-                    <Link 
-                      href="/contact" 
+                    <Link
+                      href="/contact"
                       className="inline-flex items-center gap-2 bg-primary text-brand-dark font-bold px-8 py-4 rounded-xl shadow-btn-yellow hover:bg-primary-light transition-all duration-200"
                     >
                       Become A Volunteer
@@ -144,11 +152,15 @@ export default function HeroSection() {
                 <div className="flex justify-start lg:justify-end">
                   <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 lg:p-10 rounded-3xl max-w-sm w-full shadow-2xl">
                     <div className="flex items-baseline gap-1 text-white font-extrabold text-6xl lg:text-7xl mb-4">
-                      {count}<span className="text-primary">+</span>
+                      {count}
+                      <span className="text-primary">+</span>
                     </div>
-                    <h3 className="text-xl font-bold font-headline text-white mb-2">Active Volunteers</h3>
+                    <h3 className="text-xl font-bold font-headline text-white mb-2">
+                      Active Volunteers
+                    </h3>
                     <p className="text-white/60 font-stack-sans text-sm lg:text-base">
-                      A passionate network working on the ground to make widespread impact.
+                      A passionate network working on the ground to make
+                      widespread impact.
                     </p>
                   </div>
                 </div>
@@ -159,7 +171,7 @@ export default function HeroSection() {
 
         {/* Navigation Buttons - Placed OUTSIDE the map to fix click issues */}
         <div className="absolute bottom-0 left-[35%] lg:left-[40%]  z-[70]">
-           <SwiperNavButtons />
+          <SwiperNavButtons />
         </div>
       </Swiper>
     </section>

@@ -27,8 +27,8 @@ const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Blog", href: "/blog" },
-  { label: "Pages", href: "/pages" },
+  { label: "Events", href: "/events" },
+  { label: "Our Team", href: "/team" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -66,19 +66,19 @@ export default function Navbar() {
             "max-w-[1320px] mx-auto flex items-center justify-between",
             "px-10 h-[90px]",
             "max-lg:px-7",
-            "max-md:px-5 max-md:h-[72px]",
+            "max-md:px-5 max-md:h-[92px]",
           )}
         >
           {/* ── Logo: SVG only — the SVG file already contains the icon+wordmark ── */}
           <Link href="/" className="shrink-0 flex items-center">
             <Image
-              src="/karm-logo.png"
+              src="/karma-logo-3.png"
               alt="Aasha"
-              width={160}
-              height={80}
+              width={180}
+              height={100}
               unoptimized
               priority
-              className="h-20 w-auto max-md:h-9"
+              className="h-22 w-auto max-md:h-20"
             />
           </Link>
 
@@ -90,7 +90,8 @@ export default function Navbar() {
                 href={link.href}
                 className={cn(
                   "px-4 py-2.5 rounded-lg",
-                  "font-stack-sans font-medium text-[0.9rem] text-white/90 hover:text-white",
+                  "font-stack-sans font-medium text-[0.9rem] ",
+                  scrolled ? "text-white/90 hover:text-primary" : "text-primary hover:text-primary",
                   "transition-colors duration-200 whitespace-nowrap",
                 )}
               >

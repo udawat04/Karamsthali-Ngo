@@ -19,10 +19,10 @@ export default async function TeamMemberPage({ params }: PageProps) {
     <main className="bg-[#fafafa] min-h-screen">
       <PageHeader 
         title={member.name}
-        backgroundImage={member.bgImage}
+        // backgroundImage={member.bgImage}
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Team", href: "/about" },
+          { label: "Team", href: "/team" },
           { label: member.name }
         ]}
       />

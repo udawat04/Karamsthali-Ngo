@@ -8,12 +8,15 @@ import NGOPrograms from '@/components/about/NGOPrograms';
 import TeamSection from '@/components/about/TeamSection';
 import FocusedActions from '@/components/home/FocusedActions';
 import FAQ from '@/components/common/FAQ';
+import ContactSection from '@/components/contact/ContactSection';
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
       <PageHeader 
-        title="About Us"
+        title="About Our Mission"
+        highlightedWord="Mission"
+        subtitle="Learn about our journey, our values, and the passionate team working tirelessly to empower marginalized communities across Rajasthan."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About Us' }
@@ -21,11 +24,12 @@ export default function AboutPage() {
       />
       
       <AboutUsSpotlight />
-      <OurApproach />
       <NGOPrograms />
+      <OurApproach />
       <OurImpact />
       <TeamSection />
       <FocusedActions/>
+      <ContactSection/>
       <FAQ />
     </main>
   );

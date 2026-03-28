@@ -18,11 +18,11 @@ interface NavLink {
 }
 
 const NAV_LINKS: NavLink[] = [
-  { label: "Home", href: "/" },
+   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Blog", href: "/blog" },
-  { label: "Pages", href: "/pages" },
+  { label: "Events", href: "/events" },
+  { label: "Our Team", href: "/team" },
   { label: "Contact Us", href: "/contact" },
 ];
 
@@ -48,7 +48,7 @@ export default function Navbar2() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
             ? "bg-brand-dark/95 backdrop-blur-[14px] border-b border-white/6"
-            : "bg-white shadow-sm border-b border-black/5"
+            : "bg-[#fafafa] shadow-sm border-b border-black/5"
         )}
       >
         <div
@@ -60,15 +60,15 @@ export default function Navbar2() {
           )}
         >
           {/* Logo */}
-          <Link href="/" className="shrink-0 flex items-center">
+           <Link href="/" className="shrink-0 flex items-center">
             <Image
               src="/karma-logo-3.png"
-              alt="Karma Sthali Sansthan"
-              width={160}
-              height={80}
+              alt="Aasha"
+              width={180}
+              height={100}
               unoptimized
               priority
-              className="h-20 w-auto max-md:h-10"
+              className="h-22 w-auto max-md:h-20"
             />
           </Link>
 
@@ -145,12 +145,12 @@ export default function Navbar2() {
             <SheetTitle asChild>
               <Link href="/" onClick={closeSheet} className="flex items-center">
                 <Image
-                  src="/karm-logo.jpeg"
+                  src="/karma-logo-3.png"
                   alt="Karma Sthali Sansthan"
                   width={130}
                   height={40}
                   unoptimized
-                  className="h-10 w-auto bg-white rounded-md p-1"
+                  className="h-10 w-auto"
                 />
               </Link>
             </SheetTitle>
