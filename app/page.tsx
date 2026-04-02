@@ -23,10 +23,10 @@ export default function HomePage() {
       <LatestEvents />
       <NarrativeSection />
       {/* <ImpactStories /> */}
-      <OurBenefits />
-      <BiggestContributor />
+      {/* <OurBenefits /> */}
+      {/* <BiggestContributor /> */}
       <FocusedActions />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <ContactSection />
       <FAQ />
     </main>
