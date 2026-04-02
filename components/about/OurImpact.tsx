@@ -6,7 +6,7 @@ import { Button } from '@/components/common/Button';
 
 export default function OurImpact() {
   return (
-    <section className="py-20 lg:py-28 w-full bg-[#f9f9f9] font-stack-sans text-brand-dark">
+    <section className="py-20 lg:py-28 w-full bg-[#f4f4f0] font-stack-sans text-brand-dark">
       <div className="max-w-[1320px] mx-auto px-5 md:px-7 lg:px-10 flex flex-col lg:flex-row gap-16 lg:gap-20 items-center">
         
         {/* Left Side: Overlapping Images */}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Community Empowerment Program",
+    "category": "Social Impact",
+    "image": "https://img.freepik.com/free-photo/mother-daughter-preparing-plant-tree-woods_482257-91250.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Education & Awareness Initiative",
+    "category": "Public Health",
+    "image": "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Health & Well-Being Program",
+    "category": "Social Justice",
+    "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Cow Protection & Gaushala",
+    "category": "Animal Welfare",
+    "image": "https://images.unsplash.com/photo-1588610376510-7216664e432f?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "title": "Women's Skill Development",
+    "category": "Empowerment",
+    "image": "https://images.unsplash.com/photo-1610214415758-5c230c14909f?q=80&w=800&auto=format&fit=crop"
+  }
+]

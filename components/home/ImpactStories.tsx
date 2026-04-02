@@ -14,7 +14,7 @@ import impactStories from "@/data/impact-stories.json";
 
 export default function ImpactStories() {
   return (
-    <section className="relative w-full overflow-hidden py-20 md:py-32 bg-brand-dark">
+    <section className="relative w-full overflow-hidden py-20 md:py-32 bg-brand-dark" id="impact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Header Section */}

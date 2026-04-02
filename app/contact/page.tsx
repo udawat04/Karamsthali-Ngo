@@ -8,12 +8,13 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#fafafa]">
       <PageHeader 
-        title="Contact Us"
+        title="Contact Our Team"
+        highlightedWord="Contact"
+        subtitle="Have questions or want to get involved? Reach out to us — we're always here to listen and collaborate for a better tomorrow."
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Contact Us' }
         ]}
-        backgroundImage="https://images.unsplash.com/photo-1423666639041-f56196c273e8?q=80&w=2070&auto=format&fit=crop"
       />
       <MarqueeSection />
       <ContactCards />

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NarrativeSection() {
   return (
-    <section className="bg-[#eef8fb] py-16 md:py-24 overflow-hidden">
+    <section className="bg-[#f5f5f0] py-16 md:py-24 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-5 md:px-8 lg:px-12">
         
         {/* HEADER AREA */}
