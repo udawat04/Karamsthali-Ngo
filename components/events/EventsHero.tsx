@@ -4,12 +4,10 @@ import eventsData from "@/data/events.json";
 
 // ── Shared helpers exported so other event components can re-use them ─────────
 export const CATEGORY_COLORS: Record<string, string> = {
-  Healthcare:           "bg-rose-100 text-rose-700",
-  "Women Empowerment":  "bg-purple-100 text-purple-700",
-  Education:            "bg-blue-100 text-blue-700",
-  Environment:          "bg-green-100 text-green-700",
-  "Human Rights":       "bg-amber-100 text-amber-700",
-  Fundraising:          "bg-yellow-100 text-yellow-800",
+  "Feeding the Needy":   "bg-orange-100 text-orange-700",
+  "Cow Welfare & Care":  "bg-green-100 text-green-700",
+  "Empowering Children": "bg-blue-100 text-blue-700",
+  "Feeding Street Dogs": "bg-amber-100 text-amber-700",
 };
 
 export function formatDateLong(dateStr: string) {

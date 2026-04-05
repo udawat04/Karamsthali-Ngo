@@ -4,12 +4,11 @@ import React from "react";
 import Link from "next/link";
 import {
   Facebook,
-  Twitter,
   Instagram,
-  Linkedin,
   MapPin,
   Phone,
   ArrowRight,
+  MessageCircle,
 } from "lucide-react";
 
 export default function Footer() {
@@ -22,10 +21,15 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { Icon: Facebook, href: "https://facebook.com" },
-    { Icon: Twitter, href: "https://twitter.com" },
-    { Icon: Instagram, href: "https://instagram.com" },
-    { Icon: Linkedin, href: "https://linkedin.com" },
+    {
+      Icon: Facebook,
+      href: "https://www.facebook.com/share/18ar2s5ir4/?mibextid=wwXIfr",
+    },
+    {
+      Icon: Instagram,
+      href: "https://www.instagram.com/karmasthalisansthan?igsh=ajhsdnYwcGlpeDE4",
+    },
+    { Icon: MessageCircle, href: "https://wa.me/919772403688" },
   ];
 
   return (
@@ -53,9 +57,9 @@ export default function Footer() {
                 संस्थान के माध्यम से आप निर्धन बच्चों के लिए पुण्यतिथि, जन्मदिन,
                 शादी की सालगिरह या किसी भी त्यौहार पर भोजन सेवा करवा सकते हैं।
               </p>
-              <p className="text-white/60 text-sm italic border-l-2 border-primary pl-4">
+              {/* <p className="text-white/60 text-sm italic border-l-2 border-primary pl-4">
                 भोजन के समय बच्चों का वीडियो आपके नाम के साथ सेंड किया जाएगा।
-              </p>
+              </p> */}
             </div>
             <div className="flex items-center gap-4">
               {socialLinks.map(({ Icon, href }, i) => (

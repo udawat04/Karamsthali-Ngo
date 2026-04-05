@@ -2,76 +2,75 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  ArrowLeft,
+  ArrowRight,
+  Video,
+  TreeDeciduous,
+  Heart,
+} from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/common/Button";
-
-// Swiper imports
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 
-interface VolunteerAvatar {
-  src: string;
-  fallback: string;
-  bg: string;
-}
-
-const VOLUNTEERS: VolunteerAvatar[] = [
-  { src: "https://html.awaikenthemes.com/aasha/images/author-1.jpg", fallback: "V1", bg: "bg-brand-600" },
-  { src: "https://html.awaikenthemes.com/aasha/images/author-2.jpg", fallback: "V2", bg: "bg-[#266e42]" },
-  { src: "https://html.awaikenthemes.com/aasha/images/author-3.jpg", fallback: "V3", bg: "bg-[#2d804d]" },
-  { src: "https://html.awaikenthemes.com/aasha/images/author-4.jpg", fallback: "V4", bg: "bg-[#349258]" },
+const VOLUNTEERS = [
+  {
+    src: "https://html.awaikenthemes.com/aasha/images/author-1.jpg",
+    fallback: "V1",
+  },
+  {
+    src: "https://html.awaikenthemes.com/aasha/images/author-2.jpg",
+    fallback: "V2",
+  },
+  {
+    src: "https://html.awaikenthemes.com/aasha/images/author-3.jpg",
+    fallback: "V3",
+  },
+  {
+    src: "https://html.awaikenthemes.com/aasha/images/author-4.jpg",
+    fallback: "V4",
+  },
 ];
 
 const SLIDES = [
   {
-    bg: "https://html.awaikenthemes.com/aasha/images/hero-bg-image.jpg",
-    title: "Empowering Communities,\nInspiring Change",
-    desc: "We bring people together to challenge injustice, amplify unheard voices, and drive collective action that addresses inequality and defends human rights.",
+    // Remove "/public" from the start of the path
+    bg: "/hero-banner-1.jpeg",
+    title: "कर्म स्थली संस्थान\nबलीचा, उदयपुर",
+    desc: "निर्धन बच्चों के लिए पुण्यतिथि, जन्मदिन, शादी की सालगिरह या किसी भी अवसर पर भोजन सेवा। आपका नाम लेकर भोजन करवाया जाएगा।",
+    tag: "भोजन सेवा अभियान",
+    icon: <Video className="size-4 text-primary" />,
   },
   {
-    bg: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1920",
-    title: "Education For\nEvery Child",
-    desc: "We believe education is a fundamental human right. Join us in providing access to quality learning resources and building schools for the future generation.",
+    bg: "/hero-banner-2.jpg", // Updated to your new tree planting image
+    title: "वृक्षारोपण अभियान:\nहरा-भरा उदयपुर",
+    desc: "पर्यावरण संरक्षण की दिशा में हमारा कदम। संस्थान के माध्यम से आप अपनी विशेष तिथियों पर वृक्षारोपण कर प्रकृति को उपहार दे सकते हैं।",
+    tag: "प्रकृति सेवा",
+    icon: <TreeDeciduous className="size-4 text-primary" />,
   },
   {
-    bg: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1920",
-    title: "Protect Our\nEnvironment",
-    desc: "Taking action for our planet. We focus on sustainability, conservation, and protecting natural habitats through community-led environmental initiatives.",
+    bg: "/hero-banner-3.jpg", // Updated to your new cow feeding image
+    title: "गौ सेवा ही\nपरम धर्म है",
+    desc: "लावारिस और बीमार गौवंश की सेवा और चारे की व्यवस्था। संस्थान की गौशाला में सहयोग कर पुण्य के भागी बनें।",
+    tag: "गौ कल्याण",
+    icon: <Heart className="size-4 text-primary" />,
   },
 ];
-
-function useAnimatedCounter(target: number, duration: number): number {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    let current = 0;
-    const step = target / (duration / 16);
-    const id = setInterval(() => {
-      current += step;
-      if (current >= target) {
-        setValue(target);
-        clearInterval(id);
-      } else setValue(Math.floor(current));
-    }, 16);
-    return () => clearInterval(id);
-  }, [target, duration]);
-  return value;
-}
 
 const SwiperNavButtons = () => {
   const swiper = useSwiper();
   return (
-    <div className="flex items-center gap-3 mt-8 mb-5 lg:mt-0 relative z-[60]">
-      <button 
-        onClick={() => swiper.slidePrev()} 
+    <div className="flex items-center gap-3 mt-8 lg:mt-0 relative z-[60]">
+      <button
+        onClick={() => swiper.slidePrev()}
         className="size-12 lg:size-14 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-primary hover:text-black rounded-full flex items-center justify-center transition-all cursor-pointer"
       >
         <ArrowLeft className="size-5" />
       </button>
-      <button 
-        onClick={() => swiper.slideNext()} 
+      <button
+        onClick={() => swiper.slideNext()}
         className="size-12 lg:size-14 bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-primary hover:text-black rounded-full flex items-center justify-center transition-all cursor-pointer"
       >
         <ArrowRight className="size-5" />
@@ -81,24 +80,18 @@ const SwiperNavButtons = () => {
 };
 
 export default function HeroSection() {
-  const count = useAnimatedCounter(180, 1800);
-
   return (
-    <section className="relative w-full min-h-fit  bg-[#0a1811] overflow-hidden">
+    <section className="relative w-full h-screen min-h-[700px] bg-[#0a1811] overflow-hidden">
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         speed={1000}
         autoplay={{ delay: 6000, disableOnInteraction: false }}
-        loop={false}
+        loop={true}
         className="w-full h-full"
       >
         {SLIDES.map((slide, index) => (
-          <SwiperSlide
-            key={index}
-            className="relative w-full h-auto pb-4"
-            style={{ height: "auto !important" }}
-          >
-            {/* Background Image */}
+          <SwiperSlide key={index} className="relative w-full h-full">
+            {/* Background Image - Reverted to original gradient colors */}
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url('${slide.bg}')` }}
@@ -108,12 +101,12 @@ export default function HeroSection() {
             </div>
 
             {/* Main Content Container */}
-            <div className="relative z-10 w-full  max-w-7xl mx-auto px-6 flex items-center pt-24 pb-20 xl:pt-28">
+            <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 flex items-center pt-24 pb-20 xl:pt-28">
               <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
                 {/* Left Side: Text */}
                 <div className="flex flex-col items-start space-y-6 lg:space-y-8">
                   <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm p-1 pr-4 rounded-full border border-white/10">
-                    <div className="flex -space-x-3">
+                    <div className="flex -space-x-3 pl-1">
                       {VOLUNTEERS.map((v, i) => (
                         <Avatar
                           key={i}
@@ -124,12 +117,15 @@ export default function HeroSection() {
                         </Avatar>
                       ))}
                     </div>
-                    <span className="text-xs lg:text-sm font-medium text-white/90">
-                      Join 180+ Active Volunteers
-                    </span>
+                    <div className="flex items-center gap-2 ml-2">
+                      {slide.icon}
+                      <span className="text-xs lg:text-sm font-medium text-white/90 uppercase tracking-wider">
+                        {slide.tag}
+                      </span>
+                    </div>
                   </div>
 
-                  <h1 className="text-h1 font-extrabold font-headline text-white leading-[1.1] whitespace-pre-line">
+                  <h1 className="text-5xl md:text-6xl lg:text-h1 font-extrabold font-headline text-white leading-[1.1] whitespace-pre-line">
                     {slide.title}
                   </h1>
 
@@ -142,25 +138,48 @@ export default function HeroSection() {
                       href="/contact"
                       className="inline-flex items-center gap-2 bg-primary text-brand-dark font-bold px-8 py-4 rounded-xl shadow-btn-yellow hover:bg-primary-light transition-all duration-200"
                     >
-                      Become A Volunteer
+                      सहयोग करें
                       <ArrowUpRight className="w-5 h-5" strokeWidth={2.5} />
                     </Link>
                   </div>
                 </div>
 
-                {/* Right Side: Impact Card */}
+                {/* Right Side: Contribution Tiers Card */}
                 <div className="flex justify-start lg:justify-end">
                   <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 lg:p-10 rounded-3xl max-w-sm w-full shadow-2xl">
-                    <div className="flex items-baseline gap-1 text-white font-extrabold text-6xl lg:text-7xl mb-4">
-                      {count}
-                      <span className="text-primary">+</span>
-                    </div>
-                    <h3 className="text-xl font-bold font-headline text-white mb-2">
-                      Active Volunteers
+                    <h3 className="text-2xl font-bold font-headline text-white mb-6 border-b border-white/10 pb-4">
+                      भोजन सेवा सहयोग
                     </h3>
-                    <p className="text-white/60 font-stack-sans text-sm lg:text-base">
-                      A passionate network working on the ground to make
-                      widespread impact.
+
+                    <div className="space-y-6">
+                      <div className="flex justify-between items-center">
+                        <span className="text-white/70 font-medium">
+                          50 से 55 बच्चे
+                        </span>
+                        <span className="text-2xl font-extrabold text-primary">
+                          ₹2100
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-white/70 font-medium">
+                          40 से 45 बच्चे
+                        </span>
+                        <span className="text-2xl font-extrabold text-primary">
+                          ₹1500
+                        </span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-white/70 font-medium">
+                          30 से 35 बच्चे
+                        </span>
+                        <span className="text-2xl font-extrabold text-primary">
+                          ₹1100
+                        </span>
+                      </div>
+                    </div>
+
+                    <p className="mt-8 text-sm text-white/50 italic leading-relaxed">
+                      "आपका एक छोटा सा सहयोग किसी मासूम की भूख मिटा सकता है।"
                     </p>
                   </div>
                 </div>
@@ -169,8 +188,8 @@ export default function HeroSection() {
           </SwiperSlide>
         ))}
 
-        {/* Navigation Buttons - Placed OUTSIDE the map to fix click issues */}
-        <div className="absolute bottom-0 left-[35%] lg:left-[40%]  z-[70]">
+        {/* Navigation Buttons */}
+        <div className="absolute bottom-10 left-[35%] lg:left-[40%] z-[70]">
           <SwiperNavButtons />
         </div>
       </Swiper>

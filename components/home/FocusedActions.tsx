@@ -43,61 +43,43 @@ export default function FocusedActions() {
   return (
     <section className="bg-brand-dark py-20 lg:py-28 overflow-hidden">
       <div className="max-w-[1320px] mx-auto px-10 max-lg:px-7 max-sm:px-5">
-        {/* ══════════════════════════════════════════════════════
-            TWO-COLUMN SPLIT
-            Left  → photo collage + floating stat cards
-            Right → label, h2, description, tabs, tab content, CTA
-        ══════════════════════════════════════════════════════ */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-center">
-          {/* ── LEFT: Photo collage with floating cards ── */}
+          {/* ── LEFT: Photo collage using public images ── */}
           <div className="relative h-[560px] md:h-[620px] lg:h-[680px] max-sm:h-[420px]">
-            {/* Top-right photo */}
-            <div className="absolute top-0 right-0 w-[56%] h-[47%] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+            {/* 1. Top-right photo (hero-banner-1) */}
+            <div className="absolute top-0 right-0 w-[56%] h-[47%] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)] border-4 border-white/10">
               <img
-                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80"
-                alt="Community gathering"
+                src="/hero-banner-1.jpeg"
+                alt="Feeding Children"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "https://html.awaikenthemes.com/aasha/images/about-image-1.jpg";
-                }}
               />
             </div>
 
-            {/* Main tall photo — left, spans full height */}
-            <div className="absolute top-[8%] left-0 w-[58%] h-[80%] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.45)]">
+            {/* 2. Main tall photo — left (hero-banner-3) */}
+            <div className="absolute top-[8%] left-0 w-[58%] h-[80%] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.45)] border-4 border-white/10 z-10">
               <img
-                src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80"
-                alt="Protest march"
+                src="/hero-banner-3.jpg"
+                alt="Planting Trees"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "https://html.awaikenthemes.com/aasha/images/about-image-1.jpg";
-                }}
               />
             </div>
 
-            {/* Bottom-right photo */}
-            <div className="absolute bottom-0 right-0 w-[50%] h-[46%] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+            {/* 3. Bottom-right photo (hero-banner-2) */}
+            <div className="absolute bottom-0 right-0 w-[50%] h-[46%] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.4)] border-4 border-white/10">
               <img
-                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80"
-                alt="Volunteers"
+                src="/hero-banner-2.jpg"
+                alt="Feeding Cows"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src =
-                    "https://html.awaikenthemes.com/aasha/images/about-image-1.jpg";
-                }}
               />
             </div>
 
-            {/* ── Floating card: Active Volunteers (top-left) ── */}
-            <div className="absolute top-0 left-0 bg-white text-brand-dark rounded-2xl p-4 shadow-[0_8px_32px_rgba(0,0,0,0.2)] z-10 max-w-[200px]">
+            {/* ── Floating card: Active Volunteers ── */}
+            <div className="absolute top-[-10px] left-[-10px] bg-white text-brand-dark rounded-2xl p-4 shadow-2xl z-20 max-w-[200px] border border-gray-100">
               <p className="font-headline font-extrabold text-lg leading-snug mb-3">
                 3,500+ Active
                 <br />
                 Volunteers
               </p>
-              {/* Avatar stack */}
               <div className="flex -space-x-2">
                 {AVATARS.map((av, i) => (
                   <Avatar key={i} className="size-9 border-2 border-white">
@@ -106,7 +88,7 @@ export default function FocusedActions() {
                       alt={av.fallback}
                       className="object-cover"
                     />
-                    <AvatarFallback className="bg-brand-600 text-white text-[10px] font-bold">
+                    <AvatarFallback className="bg-primary text-brand-dark text-[10px] font-bold">
                       {av.fallback}
                     </AvatarFallback>
                   </Avatar>
@@ -114,38 +96,30 @@ export default function FocusedActions() {
               </div>
             </div>
 
-            {/* ── Floating card: Projects Completed (bottom-left) ── */}
-            <div className="absolute bottom-0 left-0 bg-white text-brand-dark rounded-2xl p-4 shadow-[0_8px_32px_rgba(0,0,0,0.2)] z-10 flex items-center gap-3 max-w-[220px]">
+            {/* ── Floating card: Projects Completed ── */}
+            <div className="absolute bottom-10 left-[-20px] bg-white text-brand-dark rounded-2xl p-4 shadow-2xl z-20 flex items-center gap-3 max-w-[220px] border border-gray-100">
               <div className="size-11 rounded-xl bg-primary flex items-center justify-center shrink-0">
-                {/* Command/grid icon */}
-                <svg
-                  className="size-5 text-brand-dark"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                  strokeLinecap="round"
-                >
-                  <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
-                </svg>
+                <Target className="size-5 text-brand-dark" strokeWidth={2.5} />
               </div>
               <div>
                 <p className="font-headline font-extrabold text-xl leading-none">
                   250+
                 </p>
                 <p className="font-stack-sans text-sm text-brand-dark/70 mt-0.5">
-                  Projects Completed
+                  Projects Done
                 </p>
               </div>
             </div>
 
-            {/* Yellow dot accent — matches reference */}
-            <div className="absolute top-[47%] right-[41%] size-3 rounded-full bg-primary z-10 animate-[var(--animate-dot-pulse)]" />
+            {/* ── SINGLE PULSE DOT ── */}
+            <div className="absolute top-[47%] right-[41%] size-4 flex items-center justify-center z-20">
+              <div className="size-3 rounded-full bg-primary border-2 border-white shadow-lg" />
+              <div className="absolute size-full rounded-full bg-primary animate-ping opacity-60" />
+            </div>
           </div>
 
           {/* ── RIGHT: Content ── */}
           <div>
-            {/* "What We Do" label */}
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full pl-3 pr-5 py-1.5 mb-6">
               <span className="size-2 rounded-full bg-primary shrink-0" />
               <span className="font-stack-sans font-semibold text-xs uppercase tracking-[0.18em] text-white/80">
@@ -153,7 +127,6 @@ export default function FocusedActions() {
               </span>
             </div>
 
-            {/* Heading */}
             <h2
               className="font-headline font-extrabold text-white leading-[1.1] tracking-tight mb-5"
               style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)" }}
@@ -163,14 +136,12 @@ export default function FocusedActions() {
               Deliver Impacts
             </h2>
 
-            {/* Description */}
             <p className="font-stack-sans text-white/65 text-[0.97rem] leading-[1.75] mb-8 max-w-[520px]">
               Through thoughtfully planned programs and community-led action, we
-              empower individuals, strengthen neighborhoods, and foster lasting
-              positive change one initiative at a time.
+              empower individuals and foster lasting positive change in Udaipur.
             </p>
 
-            {/* ── Tabs navigation ── */}
+            {/* Tabs navigation */}
             <div className="flex flex-wrap gap-3 mb-6">
               {TABS.map((tab) => (
                 <button
@@ -180,7 +151,7 @@ export default function FocusedActions() {
                     "px-6 py-3 rounded-full font-stack-sans font-bold text-sm transition-all duration-200",
                     activeTab.id === tab.id
                       ? "bg-primary text-brand-dark shadow-btn-yellow"
-                      : "bg-white/[0.07] border border-white/10 text-white/80 hover:bg-white/[0.12] hover:text-white",
+                      : "bg-white/[0.07] border border-white/10 text-white/80 hover:bg-white/[0.12]",
                   )}
                 >
                   {tab.label}
@@ -188,40 +159,36 @@ export default function FocusedActions() {
               ))}
             </div>
 
-            {/* Divider */}
             <div className="h-px bg-white/[0.08] mb-6" />
 
-            {/* ── Tab content: icon + title + desc ── */}
-            <div key={activeTab.id} className="flex items-start gap-5 mb-8">
-              {/* Icon */}
+            {/* Tab content */}
+            <div
+              key={activeTab.id}
+              className="flex items-start gap-5 mb-8 animate-in fade-in slide-in-from-left-2 duration-300"
+            >
               <div className="size-14 rounded-xl bg-primary/15 border border-primary/25 flex items-center justify-center shrink-0 mt-0.5">
                 <activeTab.icon
                   className="size-6 text-primary"
                   strokeWidth={1.8}
                 />
               </div>
-              {/* Text */}
               <div>
-                <h3 className="font-syne font-bold text-white text-xl leading-snug mb-2">
+                <h3 className="font-headline font-bold text-white text-xl leading-snug mb-2">
                   {activeTab.title}
                 </h3>
-                <p className="font-stack-sans text-white/62 text-[0.92rem] leading-[1.72]">
+                <p className="font-stack-sans text-white/60 text-[0.92rem] leading-[1.72]">
                   {activeTab.desc}
                 </p>
               </div>
             </div>
 
-            {/* Divider */}
             <div className="h-px bg-white/[0.08] mb-8" />
 
             <Link
               href="/contact"
-              className="group relative overflow-hidden inline-flex items-center gap-2 bg-primary text-brand-dark font-bold px-7 py-4 rounded-lg shadow-btn-yellow hover:shadow-none transition-all duration-300 mt-6 md:mt-8"
+              className="group relative overflow-hidden inline-flex items-center gap-2 bg-primary text-brand-dark font-bold px-7 py-4 rounded-xl shadow-btn-yellow hover:shadow-none transition-all duration-300"
             >
-              {/* Background Sweep from Left to Right */}
               <span className="absolute inset-0 bg-white w-0 group-hover:w-full transition-all duration-300 ease-out z-0" />
-
-              {/* Button Content */}
               <span className="relative z-10 group-hover:text-brand-dark flex items-center gap-2 transition-colors duration-300">
                 Contact Us
                 <ArrowUpRight

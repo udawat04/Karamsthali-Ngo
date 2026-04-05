@@ -7,10 +7,22 @@ import EventsHero from "@/components/events/EventsHero";
 import ContactSection from "@/components/contact/ContactSection";
 import FAQ from "@/components/common/FAQ";
 
-export const metadata = {
-  title: "Events | Karamsthali NGO",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "NGO Events & Volunteer Opportunities in Udaipur | Karmasthali Sansthan",
   description:
-    "Discover upcoming programmes, health camps, workshops, and community drives organised by Karamsthali NGO across Rajasthan.",
+    "Join NGO events in Udaipur: health camps, skill training, community drives. Volunteer opportunities available. Register today with NGO Udaipur.",
+  keywords:
+    "NGO events Udaipur, Volunteer opportunities Udaipur, Community programs, Health camps, Skill training workshops Udaipur",
+  alternates: {
+    canonical: "https://karmasthalisansthan.org/events",
+  },
+  openGraph: {
+    title: "NGO Events in Udaipur | Volunteer Opportunities",
+    url: "https://karmasthalisansthan.org/events",
+  },
 };
 
 const featuredEvents = eventsData.filter((e) => e.isFeatured);

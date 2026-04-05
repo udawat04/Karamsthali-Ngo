@@ -1,301 +1,177 @@
 [
   {
-    "slug": "community-development",
-    "title": "Community Development",
-    "tagline": "Building stronger communities from the ground up",
-    "cardText": "Strengthening local communities through education programs & skill-building initiatives that create lasting change.",
-    "bgImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2070&auto=format&fit=crop",
-    "heroImage": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=2070&auto=format&fit=crop",
+    "slug": "cow-welfare-protection",
+    "title": "Cow Welfare & Care",
+    "tagline": "Protecting and serving the sacred with dignity",
+    "cardText": "Providing medical care, nutritious fodder, and safe shelter for injured or abandoned cows to ensure they live with the respect they deserve.",
+    "bgImage": "/gow-seva-5.jpeg",
+    "heroImage": "/gow-seva-3.jpeg",
     "overviewParagraphs": [
-      "Our Community Development program focuses on improving the quality of life in underserved areas by addressing education, health, livelihoods, and basic infrastructure needs. We work closely with local residents to identify challenges, design practical solutions, and create long-term, sustainable change.",
-      "Rather than offering short-term support, our approach is centered on empowerment — helping communities gain the skills, resources, and confidence they need to shape their own future."
+      "Our Cow Welfare initiative is dedicated to the protection and care of cows who have been abandoned or left injured. We believe in serving these gentle beings by providing them with a sanctuary where they receive consistent medical attention and proper nutrition.",
+      "By maintaining clean shelters and ensuring a supply of fresh green fodder, we aim to create a compassionate environment that honors their significance in our culture and ecosystem."
     ],
     "whoItHelps": {
-      "description": "This program is designed to support individuals and families in underserved communities who face challenges related to education, health, livelihoods, and access to basic resources. We work with children, youth, women, and working families who are striving for better opportunities.",
-      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
+      "description": "This program focuses on abandoned, stray, and medically vulnerable cows. We also support local Gaushalas with resources to improve their infrastructure and care standards.",
+      "image": "/gow-seva-2.jpeg",
       "features": [
         {
-          "title": "Skill Development Workshops",
-          "description": "Practical training sessions that equip community members with marketable skills for sustainable livelihoods."
+          "title": "Medical Aid & Rescue",
+          "description": "Emergency treatment for street-injured cows and regular health checkups by experienced veterinarians."
         },
         {
-          "title": "Infrastructure Support",
-          "description": "Building essential infrastructure like clean water access, sanitation, and community centres that serve hundreds."
+          "title": "Nutritional Support",
+          "description": "Daily distribution of high-quality fodder and clean water to ensure optimal health and strength."
         }
       ]
     },
     "whyItMatters": {
-      "intro": "Real and lasting change begins at the community level. When people have access to education, healthcare, skills, and basic resources, they don't just survive — they gain the ability to shape their own future.",
-      "body": "By investing in people and local solutions, we build stronger, more resilient communities that can grow, support one another, and face challenges with confidence. This work is not just about solving today's problems — it's about creating a foundation for a healthier, more hopeful tomorrow.",
+      "intro": "Protecting those who cannot speak for themselves is the highest form of humanity. Cows are central to our environment and spiritual heritage.",
+      "body": "When we care for abandoned animals, we foster a society built on empathy rather than neglect. Your support ensures that no cow has to suffer on the streets from hunger or untreated wounds.",
       "bullets": [
-        "By focusing on education, health, and livelihoods, help communities build lasting solutions.",
-        "Our approach gives individuals the skills and resources they need to improve their own lives.",
-        "When people work together & have access to basic services, communities become resilient.",
-        "Investing in communities today means children grow up with better opportunities."
+        "Ensures dignified life for animals that have served humanity.",
+        "Reduces street accidents involving stray cattle.",
+        "Supports the ecological balance and traditional organic farming practices.",
+        "Promotes a culture of non-violence and compassion (Ahimsa)."
       ]
     },
     "faqs": [
       {
-        "question": "Q1. Who can benefit from this program?",
-        "answer": "Any family or individual in underserved communities can benefit — from children needing educational support to adults seeking skill-building opportunities."
+        "question": "How can I report an injured cow?",
+        "answer": "You can contact our dedicated rescue helpline. Our team coordinates with local shelters to provide immediate medical transport."
       },
       {
-        "question": "Q2. How long does the program run?",
-        "answer": "Our community programs are long-term engagements, typically spanning 2–5 years to ensure sustainable impact rather than short-term relief."
-      },
-      {
-        "question": "Q3. Can I volunteer for community development work?",
-        "answer": "Yes! We welcome volunteers with a variety of skills including teaching, construction, health, and community organizing. Training is provided."
+        "question": "Can I donate fodder directly?",
+        "answer": "Yes, we accept physical fodder donations at our verified partner shelters, or you can contribute to our 'Green Fodder Fund'."
       }
     ]
   },
   {
-    "slug": "education-awareness",
-    "title": "Education & Awareness",
-    "tagline": "Enlightening minds, transforming futures",
-    "cardText": "Delivering awareness campaigns, training sessions, & educational initiatives that empower individuals and families.",
-    "bgImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop",
-    "heroImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2070&auto=format&fit=crop",
+    "slug": "street-dog-feeding",
+    "title": "Feeding Street Dogs",
+    "tagline": "Ending hunger for our loyal street companions",
+    "cardText": "Regular feeding drives and nutritional support for thousands of street dogs who struggle to find food and love every night.",
+    "bgImage": "/feeding-dogs.png",
+    "heroImage": "/feeding-dogs.png",
     "overviewParagraphs": [
-      "Education is the most powerful tool for breaking cycles of poverty and inequality. Our Education & Awareness program delivers targeted learning initiatives, school support projects, and large-scale awareness campaigns that reach thousands of individuals each year.",
-      "From digital literacy workshops to menstrual health awareness drives, every initiative is designed to be culturally sensitive, practically impactful, and deeply rooted in community needs."
+      "Thousands of street dogs sleep hungry every night, facing the harsh realities of urban life. Our mission is to ensure that no dog in our operational areas goes without a meal.",
+      "Beyond just feeding, these drives allow us to monitor their health, identify those needing medical help, and spread the message of co-existence between humans and animals."
     ],
     "whoItHelps": {
-      "description": "This program serves children out of school, first-generation learners, adolescent girls, and adults who missed formal education. Special emphasis is placed on marginalized groups who have historically been excluded from mainstream education.",
-      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+      "description": "Our feeding drives target stray dog populations in residential and industrial areas where food sources are scarce. We also help local community feeders by providing them with bulk supplies.",
+      "image": "/feeding-dogs-2.png",
       "features": [
         {
-          "title": "Digital Literacy Drives",
-          "description": "Equipping rural youth with computer and internet skills that open doors to employment and further education."
+          "title": "Daily Nutrition Drives",
+          "description": "Consistent meal distribution across various zones to ensure dogs don't have to scavenge from waste."
         },
         {
-          "title": "School Enrollment Campaigns",
-          "description": "Motivating families to enroll and keep children in school through awareness drives and incentive programs."
+          "title": "Health Monitoring",
+          "description": "Identifying and treating skin infections or minor injuries during our feeding rounds."
         }
       ]
     },
     "whyItMatters": {
-      "intro": "Education unlocks opportunity. Without access to quality learning, millions of children and adults are robbed of their potential and the chance to contribute fully to society.",
-      "body": "Our programs don't just build classrooms — they build minds. We train teachers, develop curricula, and run awareness campaigns that change attitudes around education, especially for girls and women.",
+      "intro": "A small act of kindness—a simple bowl of food—can change a dog's world. Kindness to animals is a reflection of a community's character.",
+      "body": "Regular feeding reduces aggressive behavior in strays, making streets safer for everyone, while ensuring these loyal animals live without the pain of starvation.",
       "bullets": [
-        "Educated individuals earn more and contribute more to their communities.",
-        "Girls who complete secondary school are more likely to delay marriage and have healthier children.",
-        "Awareness campaigns reduce stigma and encourage access to health and civic services.",
-        "Digital skills prepare youth for the modern workforce and reduce unemployability."
+        "Reduces human-animal conflict in urban areas.",
+        "Provides basic survival resources to vulnerable street animals.",
+        "Ensures better immunity for strays, preventing the spread of diseases.",
+        "Encourages local residents to treat street animals with kindness."
       ]
     },
     "faqs": [
       {
-        "question": "Q1. How do you ensure girls' education?",
-        "answer": "We work with families, schools, and community leaders to remove barriers like cost, safety, and cultural resistance that prevent girls from attending school."
+        "question": "What kind of food do you provide?",
+        "answer": "We provide balanced, easy-to-digest meals consisting of rice, boiled vegetables, and dog-friendly proteins, ensuring it's safe for their health."
       },
       {
-        "question": "Q2. Are your educational programs aligned with government curricula?",
-        "answer": "Yes, all our academic programs are aligned with national curriculum standards. We supplement rather than replace formal schooling."
-      },
-      {
-        "question": "Q3. Can organizations partner with you on awareness campaigns?",
-        "answer": "Absolutely. We welcome CSR partnerships, academic collaborations, and media partnerships to amplify our awareness initiatives."
+        "question": "Can I join a feeding drive?",
+        "answer": "Absolutely! We welcome volunteers to join our evening feeding routes. It’s a great way to connect with the animals directly."
       }
     ]
   },
   {
-    "slug": "human-rights-advocacy",
-    "title": "Human Rights Advocacy",
-    "tagline": "Standing up for justice, dignity, and equality",
-    "cardText": "Social justice, legal support, & policy reforms that protect marginalized populations and ensure equal rights for all.",
-    "bgImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=2070&auto=format&fit=crop",
-    "heroImage": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?q=80&w=2070&auto=format&fit=crop",
+    "slug": "education-for-all",
+    "title": "Empowering Children",
+    "tagline": "Supporting the next generation with knowledge",
+    "cardText": "Providing learning resources, guidance, and educational support to underprivileged children to help them build a brighter future.",
+    "bgImage": "/education -for-underpriviledge.jpeg",
+    "heroImage": "/education -for-underpriviledge.jpeg",
     "overviewParagraphs": [
-      "Human rights are not privileges — they are universal entitlements that every person deserves, regardless of their background. Our Human Rights Advocacy program fights for justice, equal treatment, and legal protection for communities that have been historically marginalized.",
-      "Through legal aid, policy engagement, and public advocacy, we push for systemic change that protects individuals from exploitation, discrimination, and abuse."
+      "We believe that financial constraints should never stand in the way of a child's potential. Our program supports first-generation learners by providing them with the tools they need to succeed in school.",
+      "From basic stationery to mentorship and guidance, we walk alongside these children to ensure they stay in school and dream big."
     ],
     "whoItHelps": {
-      "description": "This program serves victims of discrimination, bonded labour, domestic abuse, caste-based violence, and those denied basic legal rights. We work with Dalit communities, tribal populations, women, and LGBTQ+ individuals who face systemic barriers.",
-      "image": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=1200&auto=format&fit=crop",
+      "description": "Our focus is on children from low-income families, daily wage workers, and those living in slums who lack access to quality educational materials or guidance.",
+      "image": "/education -for-underpriviledge-2.jpeg",
       "features": [
         {
-          "title": "Free Legal Aid Clinics",
-          "description": "Providing access to lawyers and paralegals for communities who cannot afford legal representation."
+          "title": "Learning Resources",
+          "description": "Distribution of books, school bags, and stationery to ensure children are prepared for their classes."
         },
         {
-          "title": "Policy Advocacy & Reform",
-          "description": "Engaging with government bodies, legislators, and policy makers to push for laws that protect marginalized groups."
+          "title": "Guidance & Mentorship",
+          "description": "Providing the direction and motivation needed to help children navigate their educational journey."
         }
       ]
     },
     "whyItMatters": {
-      "intro": "Without protection of their basic rights, communities cannot participate in the economic, social, or political life of the nation. Injustice, when left unchallenged, becomes normalized.",
-      "body": "Our advocacy work has contributed to legal victories that have protected hundreds of families. We believe that no development is sustainable without justice, and no community can truly thrive when its rights are violated.",
+      "intro": "Education is the most powerful tool to break the cycle of poverty. By supporting a child today, we empower a family tomorrow.",
+      "body": "When a child receives an education, they gain the confidence to lead their community out of hardship. Your support provides more than just books; it provides hope.",
       "bullets": [
-        "Legal protection enables individuals to claim their rights and hold authorities accountable.",
-        "Policy reform creates systemic change that benefits entire communities, not just individuals.",
-        "Advocacy raises public awareness, building a culture of respect and inclusion.",
-        "Documentation of violations creates evidence for legal and political action."
+        "Reduces school dropout rates among the underprivileged.",
+        "Increases future employability and financial independence.",
+        "Creates a sense of equality and confidence in children.",
+        "Builds a more literate and informed society."
       ]
     },
     "faqs": [
       {
-        "question": "Q1. How do victims access your legal aid services?",
-        "answer": "Victims can visit our field offices, contact our helpline, or be referred by our community workers who are present in targeted regions."
-      },
-      {
-        "question": "Q2. Do you only work on caste-related issues?",
-        "answer": "No. While caste-based discrimination is a focus area, we address a broad range of human rights issues including gender-based violence, land rights, and labour exploitation."
-      },
-      {
-        "question": "Q3. Are your advocacy efforts politically aligned?",
-        "answer": "We are entirely non-partisan. Our advocacy is based on constitutional values and international human rights frameworks, not political affiliation."
+        "question": "How do you select the children for support?",
+        "answer": "We conduct ground surveys in underprivileged areas and work with local schools to identify students who are at risk of dropping out due to financial issues."
       }
     ]
   },
   {
-    "slug": "healthcare-nutrition",
-    "title": "Healthcare & Nutrition",
-    "tagline": "Healthy lives, healthier communities",
-    "cardText": "Free medical camps, maternal care support, and nutrition drives ensuring every child and mother gets essential healthcare.",
-    "bgImage": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?q=80&w=2070&auto=format&fit=crop",
-    "heroImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop",
+    "slug": "hunger-relief-program",
+    "title": "Feeding the Needy",
+    "tagline": "Ensuring no one sleeps on an empty stomach",
+    "cardText": "Organizing daily meal distribution drives to provide fresh, nutritious food to the homeless and underprivileged families.",
+    "bgImage": "/community-meal-drive.jpeg",
+    "heroImage": "/community-meal-drive.jpeg",
     "overviewParagraphs": [
-      "Access to quality healthcare is a basic right, yet millions in rural India face chronic shortages of medical facilities, medicines, and trained professionals. Our Healthcare & Nutrition program bridges this gap through mobile medical camps, community health workers, and nutrition support programs.",
-      "We focus especially on maternal and child health, addressing malnutrition, anaemia, and preventable diseases that claim thousands of young lives every year."
+      "Hunger is a silent crisis. Our Hunger Relief Program is committed to reaching the most vulnerable members of society—the homeless, the elderly, and struggling families—with hot, wholesome meals.",
+      "We believe that access to food is a basic human right. By mobilizing volunteers and resources, we turn compassion into a plate of food for those who need it most."
     ],
     "whoItHelps": {
-      "description": "Our healthcare programs are designed for pregnant women, lactating mothers, children under 5, and the elderly in areas where access to primary healthcare is severely limited. We also support individuals managing chronic conditions like diabetes and hypertension.",
-      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1200&auto=format&fit=crop",
+      "description": "This program serves homeless individuals living on the streets, laborers at construction sites, and families in extreme poverty who cannot afford two square meals a day.",
+      "image": "/hero-banner-1.jpeg",
       "features": [
         {
-          "title": "Mobile Medical Camps",
-          "description": "Monthly health camps provide free doctor consultations, medicines, and diagnostics to remote communities."
+          "title": "Meal Distribution Drives",
+          "description": "Freshly prepared, hygienic meals delivered directly to locations where the needy gather."
         },
         {
-          "title": "Maternal Nutrition Support",
-          "description": "Supplementary nutrition kits, iron-folic acid distribution, and prenatal counselling for expectant mothers."
+          "title": "Nutrition for All",
+          "description": "Focusing on balanced meals that provide necessary energy and health benefits to those in need."
         }
       ]
     },
     "whyItMatters": {
-      "intro": "Health is the foundation of all other development. A sick or malnourished child cannot learn, and a chronically ill adult cannot work to support a family.",
-      "body": "By addressing preventable diseases, improving nutrition, and ensuring maternal care, we are not just saving lives — we are improving the quality of entire generations. Healthy communities are more productive, more educated, and more capable of achieving long-term goals.",
+      "intro": "A meal is more than just food; it is a gesture of care that says 'You are not alone.' No human should suffer the pain of hunger.",
+      "body": "Eliminating hunger allows individuals to focus on improving their lives, working, and caring for their families. It is the first step toward social stability and health.",
       "bullets": [
-        "Malnutrition in the first 1,000 days permanently affects brain and body development.",
-        "Preventable diseases kill millions of children every year — most are curable with basic intervention.",
-        "Maternal health directly determines child survival and developmental outcomes.",
-        "Healthy communities have higher school attendance and economic productivity."
+        "Immediate relief to those in desperate situations.",
+        "Improves community health and reduces malnutrition.",
+        "Promotes social dignity and human rights.",
+        "Fosters a spirit of community sharing and service."
       ]
     },
     "faqs": [
       {
-        "question": "Q1. How do I access your free medical camps?",
-        "answer": "Our camp schedules are published monthly on our website and distributed through local community workers. No appointment is necessary — camps are open to all."
-      },
-      {
-        "question": "Q2. Do you provide medicines at the camps?",
-        "answer": "Yes, a basic formulary of medicines is provided free of cost. For specialized medicines, we provide prescriptions and facilitate access through partner pharmacies."
-      },
-      {
-        "question": "Q3. Can hospitals or clinics partner with you?",
-        "answer": "Absolutely. We partner with healthcare providers for referral networks, specialist visits to camps, and training community health workers."
-      }
-    ]
-  },
-  {
-    "slug": "women-empowerment",
-    "title": "Women Empowerment",
-    "tagline": "Empowering women to lead, earn, and thrive",
-    "cardText": "Vocational training, self-help groups, and financial literacy programs that help women achieve economic independence.",
-    "bgImage": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2070&auto=format&fit=crop",
-    "heroImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop",
-    "overviewParagraphs": [
-      "When women are empowered, entire communities prosper. Our Women Empowerment program creates pathways for financial independence, leadership, and social participation for women who have been held back by systemic inequalities.",
-      "Through self-help groups, vocational training, entrepreneurship support, and legal awareness, we help women build confidence, earn income, and raise their voices in their families and communities."
-    ],
-    "whoItHelps": {
-      "description": "This program serves rural women, girls at risk of early marriage, survivors of domestic violence, widows, and women-headed households. We prioritize those facing the intersection of poverty, gender inequality, and social exclusion.",
-      "image": "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1200&auto=format&fit=crop",
-      "features": [
-        {
-          "title": "Self-Help Group Formation",
-          "description": "Women's collectives that pool savings, access micro-credit, and support each other through shared challenges."
-        },
-        {
-          "title": "Vocational Training",
-          "description": "Skill-based training in tailoring, food processing, handicrafts, and digital skills that generate sustainable income."
-        }
-      ]
-    },
-    "whyItMatters": {
-      "intro": "Gender equality is not just a moral imperative — it is the single most effective driver of community development. When women have power over their lives, they invest it back into their children and communities.",
-      "body": "Every rupee earned by a woman generates three times more community benefit than the same rupee earned by a man. Our programs don't just create earners — they create leaders, role models, and agents of change who inspire the next generation.",
-      "bullets": [
-        "Women who control income invest 90% back into their families, compared to 30–40% for men.",
-        "Economic independence drastically reduces vulnerability to domestic violence and exploitation.",
-        "Women in leadership roles lead to better governance and more inclusive community decisions.",
-        "Educated, empowered mothers raise healthier, better-educated children."
-      ]
-    },
-    "faqs": [
-      {
-        "question": "Q1. Can unmarried girls join your programs?",
-        "answer": "Yes. Our programs are open to girls aged 16 and above, with parental or guardian consent where required. We have specific youth programs for adolescent girls."
-      },
-      {
-        "question": "Q2. Do you provide startup capital for women entrepreneurs?",
-        "answer": "Through our SHG linkage program, women can access micro-credit from partner banks and MFIs. We also run a small grant program for selected entrepreneurs."
-      },
-      {
-        "question": "Q3. How do you address safety concerns for women participants?",
-        "answer": "All our programs are held in community-safe spaces, with female facilitators present. We also provide safety awareness and legal rights training as part of every cohort."
-      }
-    ]
-  },
-  {
-    "slug": "environmental-sustainability",
-    "title": "Environmental Sustainability",
-    "tagline": "Protecting our planet for future generations",
-    "cardText": "Tree plantation drives, waste management workshops, and green initiatives that protect our planet for future generations.",
-    "bgImage": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2070&auto=format&fit=crop",
-    "heroImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2070&auto=format&fit=crop",
-    "overviewParagraphs": [
-      "Environmental degradation disproportionately impacts the poorest and most vulnerable communities — the very people we serve. Our Environmental Sustainability program links ecological preservation with community wellbeing, creating programs that are good for both people and the planet.",
-      "From tree plantation drives to clean energy adoption and waste management, every initiative is designed to be led by the community, sustained by the community, and beneficial to the community for generations."
-    ],
-    "whoItHelps": {
-      "description": "This program serves farming communities affected by drought and soil erosion, urban slum dwellers dealing with open waste and pollution, and school children who are educated to become environmental stewards for the future.",
-      "image": "https://images.unsplash.com/photo-1591348278863-a8fb3887e2aa?q=80&w=1200&auto=format&fit=crop",
-      "features": [
-        {
-          "title": "Tree Plantation Drives",
-          "description": "Community-led plantation campaigns that have resulted in over 50,000 trees planted across participating regions."
-        },
-        {
-          "title": "Clean Energy Adoption",
-          "description": "Installing solar panels and biogas systems that reduce fossil fuel dependence and cut household energy costs."
-        }
-      ]
-    },
-    "whyItMatters": {
-      "intro": "The climate crisis is not a distant threat — it is already disrupting harvests, depleting water sources, and destroying livelihoods of the communities we work with every day.",
-      "body": "Environmental sustainability and human development are not competing priorities — they are inseparable. A healthy environment provides clean water, food security, and clean air, all of which are prerequisites for human dignity and development.",
-      "bullets": [
-        "Climate change hits the poorest communities hardest — those who contributed least to the problem.",
-        "Tree cover reduces soil erosion, improves rainfall, and creates cooler microclimates.",
-        "Waste management reduces disease burden from pollution-related illnesses.",
-        "Clean energy adoption reduces household air pollution and cuts energy expenditure."
-      ]
-    },
-    "faqs": [
-      {
-        "question": "Q1. How can schools get involved in your environmental programs?",
-        "answer": "We have a dedicated 'Green School' program where we engage students through plantation drives, eco-clubs, and climate awareness curricula. Contact us to enroll."
-      },
-      {
-        "question": "Q2. Do you provide training on organic farming?",
-        "answer": "Yes, our agricultural component includes training on organic practices, composting, and water-efficient farming that improves yields while reducing environmental damage."
-      },
-      {
-        "question": "Q3. Can corporates partner for CSR tree plantation events?",
-        "answer": "Absolutely. We organize curated CSR events for corporates, complete with certificates, impact reports, and ongoing monitoring of planted trees."
+        "question": "Where do you distribute the meals?",
+        "answer": "We focus on areas near hospitals, railway stations, and night shelters where the concentration of homeless individuals is highest."
       }
     ]
   }

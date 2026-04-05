@@ -1,229 +1,113 @@
 {
-  "annual-health-camp-2025": {
-    "fullDescription": "The Annual Community Health Camp is one of Karamsthali NGO's flagship initiatives, held every year to address the critical healthcare gap faced by underserved rural populations. In 2025, we aim to reach over 500 individuals across multiple villages in Rajasthan. The camp provides free medical consultations, blood pressure and sugar screenings, eye check-ups, dental hygiene awareness, and immunisation drives for children. Our partnerships with local government hospitals bring qualified doctors and nursing staff on-site. No registration or payment is required — services are completely free and open to all community members.",
+  "akshaya-tritiya-2026": {
+    "fullDescription": "Akshaya Tritiya is one of the most auspicious days in the Hindu calendar. The word 'Akshaya' means 'eternal' or 'that which never diminishes'. It is believed that any act of charity (Daan) performed on this day yields never-ending blessings for the donor. At Karamsthali NGO, we celebrate this day by inviting our supporters to contribute towards 'Anna Daan' (food) and 'Gau Sewa' (cow care). This is the perfect time to make a lasting impact on the lives of those who struggle for basic necessities. Your contributions on this powerful day help us maintain our feeding drives and medical care for abandoned animals throughout the year.",
     "highlights": [
-      "Free general physician consultations",
-      "Blood pressure, diabetes & haemoglobin screening",
-      "Eye check-up with free spectacles for eligible patients",
-      "Child immunisation and nutrition counselling",
-      "Dental hygiene awareness and dental kits distribution",
-      "Mental health awareness sessions by trained counsellors"
+      "Jwara Daan: Providing fresh green fodder to local Gaushalas",
+      "Anna Daan: Large-scale food distribution for homeless families",
+      "Jal Daan: Placing earthen water pots for birds and animals",
+      "Vastra Daan: Distributing summer clothing to underprivileged children",
+      "Special prayers and Bhakt Sewa at our community centers"
     ],
     "agenda": [
-      { "time": "09:00 AM", "activity": "Registration & Welcome" },
-      { "time": "09:30 AM", "activity": "General Health Screening Begins" },
-      { "time": "11:00 AM", "activity": "Specialist Consultations (Eye, Dental, Ortho)" },
-      { "time": "01:00 PM", "activity": "Nutrition & Breastfeeding Counselling" },
-      { "time": "02:30 PM", "activity": "Child Immunisation Drive" },
-      { "time": "04:00 PM", "activity": "Mental Health Awareness Session" },
-      { "time": "05:00 PM", "activity": "Closing & Gratitude" }
+      { "time": "Morning", "activity": "Gau Sewa & Fodder Distribution at Balicha Gaushala" },
+      { "time": "Afternoon", "activity": "Anna Daan: Serving wholesome meals near Railway Station" },
+      { "time": "Evening", "activity": "Water Stall (Pyau) Setup and Thirsty Traveler Service" }
     ],
-    "organizer": "Karamsthali NGO Healthcare Wing",
-    "contact": "health@karamsthali.org",
+    "organizer": "Karamsthali NGO Welfare Team",
+    "contact": "karmasthalisansthan@gmail.com",
     "registrationRequired": false,
     "gallery": [
-      "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1505751172107-5739a0077215?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512678080530-7760d81faba6?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581594658553-35955d4c202a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=800&auto=format&fit=crop"
+      "/gow-seva-5.jpeg",
+      "/gow-seva-2.jpeg",
+      "/gow-seva-3.jpeg"
     ]
   },
-  "women-empowerment-workshop-2025": {
-    "fullDescription": "The Women Empowerment & Skill Workshop is a transformative one-day programme designed to equip rural and semi-urban women with practical, income-generating skills. Participants receive hands-on training in tailoring, block printing, and handicraft production, alongside sessions on financial literacy, savings groups, and how to access microfinance. Karamsthali NGO's experienced mentors guide each participant through a structured curriculum. Lunch, materials, and certificates of participation are provided at no cost. By the end of the day, every woman leaves with both a new skill and a roadmap to implement it.",
+  "sita-navami-2026": {
+    "fullDescription": "Sita Navami celebrates the appearance of Devi Sita, the consort of Lord Ram and a manifestation of Goddess Lakshmi. Her life is a testament to resilience, sacrifice, and boundless compassion. On this day, we focus our energy on supporting the most vulnerable women and children in our community. Donating food and clothes on Sita Navami is considered highly meritorious. Karamsthali NGO organizes dedicated drives to ensure that the spirit of 'Mata Sita'—the provider and nurturer—reaches every home that faces hardship. Join us in bringing peace and prosperity to families through your generous contributions.",
     "highlights": [
-      "Hands-on tailoring and block printing workshops",
-      "Financial literacy and banking basics",
-      "Introduction to SHGs (Self Help Groups)",
-      "Guidance on obtaining microfinance loans",
-      "Take-home starter craft kits",
-      "Networking with established women entrepreneurs"
+      "Poshahar Vitran: Distributing nutritious kits to pregnant women",
+      "Kanya Pujan: Special meals and educational support for young girls",
+      "Vastra Daan: Donating sarees and suits to widow homes",
+      "Sita-Ram Bhog: Preparing and distributing prasad to thousands",
+      "Awareness sessions on women's rights and health"
     ],
     "agenda": [
-      { "time": "10:00 AM", "activity": "Welcome & Icebreaker Activities" },
-      { "time": "10:30 AM", "activity": "Tailoring & Fabric Art Workshop" },
-      { "time": "12:30 PM", "activity": "Lunch Break (Provided)" },
-      { "time": "01:15 PM", "activity": "Financial Literacy & Banking Session" },
-      { "time": "02:30 PM", "activity": "Microfinance & SHG Formation Guidance" },
-      { "time": "03:30 PM", "activity": "Entrepreneur Spotlight Talks" },
-      { "time": "04:00 PM", "activity": "Certificate Distribution & Networking" }
+      { "time": "Morning", "activity": "Nutritional Kit Distribution at Rural Health Centers" },
+      { "time": "Afternoon", "activity": "Community Kitchen: Preparing Sita-Ram Bhog" },
+      { "time": "Evening", "activity": "Clothing Distribution Drive for Slum Dwellers" }
     ],
     "organizer": "Karamsthali NGO Women's Cell",
-    "contact": "women@karamsthali.org",
-    "registrationRequired": true,
-    "gallery": [
-      "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1489424155312-428bcfe48855?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1485217988980-11786ced9454?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop"
-    ]
-  },
-  "education-drive-rural-schools-2025": {
-    "fullDescription": "The Education Drive targets government primary schools across the Bharatpur district where resource shortages are most acute. Our team of volunteers distributes essential educational kits — including geometry boxes, notebooks, pencils, erasers, school bags, and uniforms — to 1,000 children. Beyond material distribution, volunteer teachers from our network conduct interactive learning activities, storytelling sessions, and career awareness talks. The drive also identifies children who have dropped out of school and connects them with government reinstalment programmes.",
-    "highlights": [
-      "Distribution of school bags, notebooks, stationery, and uniforms",
-      "Interactive learning activities and science demonstrations",
-      "Storytelling and creative arts sessions",
-      "Career awareness talks for upper primary students",
-      "Drop-out re-enrolment guidance for families",
-      "School infrastructure quick-fix support"
-    ],
-    "agenda": [
-      { "time": "08:00 AM", "activity": "Volunteer Assembly & Briefing" },
-      { "time": "08:30 AM", "activity": "School Visits Begin (5 schools simultaneously)" },
-      { "time": "09:00 AM", "activity": "Educational Kit Distribution" },
-      { "time": "10:00 AM", "activity": "Interactive Learning Sessions" },
-      { "time": "11:30 AM", "activity": "Career Awareness & Motivation Talks" },
-      { "time": "01:00 PM", "activity": "Volunteer Debrief & Wrap-up" }
-    ],
-    "organizer": "Karamsthali NGO Education Team",
-    "contact": "education@karamsthali.org",
+    "contact": "karmasthalisansthan@gmail.com",
     "registrationRequired": false,
     "gallery": [
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1246821171-fa2b851c44ad?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510172951991-856aad68884a?q=80&w=800&auto=format&fit=crop"
+      "/about-1.jpeg",
+      "/about-2.jpeg"
     ]
   },
-  "tree-plantation-drive-2025": {
-    "fullDescription": "Celebrated on World Environment Day, the Green Rajasthan Tree Plantation Drive is Karamsthali's commitment to reversing environmental degradation in the Aravalli hills. Working alongside forest department officials, local school students, and community volunteers, we plant 5,000 native saplings — including Neem, Peepal, and Khejri — across identified barren patches. Volunteers also learn about soil conservation, watershed management, and the ecological significance of the Aravalli range. Every sapling planted is GPS-tagged and monitored for a full year.",
+  "vaishakha-purnima-2026": {
+    "fullDescription": "The Purnima of the Vaishakha month, also known as Buddha Purnima, is an exceptionally sacred day for charity. It marks the birth, enlightenment, and nirvana of Lord Buddha, who taught the world that the greatest religion is compassion. On this day, we prioritize 'Jiva Daya' (kindness to all living beings). The summer heat is at its peak, making it vital to provide cooling relief to those working on the streets. Your Daan of water, refreshing fruits, and shelter tools can provide immediate relief to laborers, street vendors, and the elderly who face the harsh sun every day.",
     "highlights": [
-      "5,000 native saplings planted across Aravalli hills",
-      "GPS-tagging and year-long monitoring of each sapling",
-      "Guided awareness walk about local ecosystem",
-      "Soil health and watershed management demonstration",
-      "Certificate of participation for all volunteers",
-      "Free saplings for home planting distributed to participants"
+      "Phal Daan: Distributing muskmelons, watermelons, and bananas",
+      "Sheetal Jal: Serving cold water and lemonade from mobile vans",
+      "Umbrella Distribution: Providing shade to street vendors",
+      "Animal Water Points: Installing concrete troughs for strays",
+      "Health monitoring for heat-stroke prevention"
     ],
     "agenda": [
-      { "time": "07:00 AM", "activity": "Volunteer Assembly at Base Camp" },
-      { "time": "07:30 AM", "activity": "Environment Awareness Briefing" },
-      { "time": "08:00 AM", "activity": "Plantation Activity Begins (Group Zones)" },
-      { "time": "09:30 AM", "activity": "Guided Ecosystem Walk" },
-      { "time": "10:30 AM", "activity": "Soil Health Demonstration" },
-      { "time": "11:00 AM", "activity": "Certificate & Sapling Distribution" },
-      { "time": "11:30 AM", "activity": "Group Photo & Closing" }
+      { "time": "Morning", "activity": "Fruit Collection and Sorting Drive" },
+      { "time": "Afternoon", "activity": "Mobile Water Distribution in Industrial Areas" },
+      { "time": "Evening", "activity": "Installing Animal Water Points across the city" }
     ],
-    "organizer": "Karamsthali NGO Environment Initiative",
-    "contact": "environment@karamsthali.org",
+    "organizer": "Karamsthali NGO Seva Unit",
+    "contact": "karmasthalisansthan@gmail.com",
     "registrationRequired": false,
     "gallery": [
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1632948523730-2d58e8b8deab?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=800&auto=format&fit=crop"
+      "/community-meal-drive.jpeg",
+      "/Why-Choose-Us-2.jpeg"
     ]
   },
-  "child-rights-awareness-campaign-2025": {
-    "fullDescription": "Every child has the right to safety, education, love, and dignity. Yet, millions of children in rural India remain unaware of these rights, and so do the adults around them. The Child Rights Awareness Campaign brings together local families, teachers, elected representatives, and children themselves for an afternoon of awareness activities. Through street plays, interactive games, testimonials, and expert discussions, the campaign builds a protective community network around every child. It is also an open platform for children to voice their concerns and aspirations.",
+  "shani-jayanti-2026": {
+    "fullDescription": "Shani Jayanti is the birth anniversary of Lord Shani (Saturn), the god of justice and karma. It is widely believed that serving the poor and the marginalized on this day is the most effective way to appease Lord Shani and reduce the burden of one's misdeeds. Shani Dev is particularly associated with those who labor under difficult conditions. At Karamsthali, we observe this day with 'Shramik Seva'—serving our laborer brothers and sisters. By donating footwear, clothing, and essential food items, you not only help someone in need but also align yourself with the principles of justice and selfless service.",
     "highlights": [
-      "Street plays and puppet shows on child rights",
-      "Interactive quiz games for children",
-      "Expert panel discussion on POCSO Act & child protection",
-      "Testimonials from child rights advocates",
-      "Information stalls on reporting abuse and getting help",
-      "Art corner where children express through painting"
+      "Paduka Daan: Distributing slippers and footwear to barefoot children",
+      "Vastra Daan: Providing black umbrellas and clothing (Shani Dev's favorites)",
+      "Tail Daan: Collecting and distributing cooking oil to BPL families",
+      "Til & Anna: Distributing black sesame and nutritional grains",
+      "Inaugurating health camps for construction laborers"
     ],
     "agenda": [
-      { "time": "11:00 AM", "activity": "Welcome & Scene-Setting" },
-      { "time": "11:30 AM", "activity": "Street Play on Child Safety" },
-      { "time": "12:00 PM", "activity": "Expert Panel: POCSO Act & Child Protection" },
-      { "time": "01:00 PM", "activity": "Children's Art Corner & Interactive Stalls" },
-      { "time": "02:00 PM", "activity": "Child Voices – Open Mic Session" },
-      { "time": "02:45 PM", "activity": "Community Pledge & Closing" }
+      { "time": "Morning", "activity": "Footwear Distribution Drive at Construction Sites" },
+      { "time": "Afternoon", "activity": "Essential Oil & Grain Distribution for the Needy" },
+      { "time": "Evening", "activity": "Blanket and Clothing Distribution for the Homeless" }
     ],
-    "organizer": "Karamsthali NGO Child Rights Division",
-    "contact": "childrights@karamsthali.org",
+    "organizer": "Karamsthali NGO Karma Seva Team",
+    "contact": "karmasthalisansthan@gmail.com",
     "registrationRequired": false,
     "gallery": [
-      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1609220136736-443140cffec6?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519340333755-56e9c1d04579?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1502086223501-7ea24430ca1a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1473649085228-583485e6e4d7?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1491438590914-bc09f414c8fe?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1440288373398-68e0b967ea0e?q=80&w=800&auto=format&fit=crop"
+      "/education -for-underpriviledge.jpeg",
+      "/education -for-underpriviledge-2.jpeg"
     ]
   },
-  "annual-fundraiser-gala-2025": {
-    "fullDescription": "The Annual Fundraiser Gala is Karamsthali NGO's most prestigious event of the year — an elegant evening that brings together philanthropists, corporate leaders, government dignitaries, and passionate changemakers under one roof. The night features impact storytelling with live testimonials, cultural performances celebrating Rajasthani heritage, a silent auction of curated artworks by local craftspersons, and recognition of outstanding donors and volunteers. All funds raised directly support our flagship programmes in healthcare, education, and women's empowerment for the upcoming year.",
+  "nirjala-ekadashi-2026": {
+    "fullDescription": "Nirjala Ekadashi is the most significant and powerful of all 24 Ekadashis. 'Nirjala' means without water, as the traditional fast on this day is observed without consuming even a drop of water. Because of its severity, it provides the benefits of all other Ekadashis combined. For this reason, 'Jal Daan' (water donation) on this day is considered the highest form of merit. As the peak of summer approaches, the thirsty cry out for relief. Karamsthali NGO launches its largest annual water initiative on Nirjala Ekadashi, setting up drinking stations and distributing cooling refreshments to thousands.",
     "highlights": [
-      "Impact storytelling with live beneficiary testimonials",
-      "Cultural performances: Rajasthani folk dance & music",
-      "Silent auction of curated local artworks",
-      "Donor and volunteer recognition awards",
-      "Networking dinner with changemakers",
-      "Exclusive NGO annual impact report launch"
+      "Amrut Pyau: Establishing 50+ water stalls across Udaipur",
+      "Matka Daan: Distributing earthen pots to slum areas for natural cooling",
+      "Sharbat Vitran: Serving rose and khus coolers to commuters",
+      "Jal Sewa: Distributing bottled water to traffic police and laborers",
+      "Special prayers for rain and environmental balance"
     ],
     "agenda": [
-      { "time": "06:00 PM", "activity": "Guest Arrival & Cocktail Hour" },
-      { "time": "07:00 PM", "activity": "Welcome Address & Annual Impact Report Launch" },
-      { "time": "07:30 PM", "activity": "Beneficiary Testimonials & Impact Stories" },
-      { "time": "08:00 PM", "activity": "Cultural Performances" },
-      { "time": "08:45 PM", "activity": "Donor & Volunteer Recognition Awards" },
-      { "time": "09:15 PM", "activity": "Silent Auction Announcement & Bidding" },
-      { "time": "09:45 PM", "activity": "Gala Dinner & Networking" }
+      { "time": "Morning", "activity": "Earthen Pot (Matka) Distribution drive" },
+      { "time": "Afternoon", "activity": "City-wide Sharbat and Cold Water Distribution" },
+      { "time": "Evening", "activity": "Volunteer Appreciation and Water Conservation Talk" }
     ],
-    "organizer": "Karamsthali NGO Leadership Team",
-    "contact": "gala@karamsthali.org",
-    "registrationRequired": true,
+    "organizer": "Karamsthali NGO Jal Seva Mission",
+    "contact": "karmasthalisansthan@gmail.com",
+    "registrationRequired": false,
     "gallery": [
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1511795409834-432f7b1728da?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1514525253344-f20387490ee1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop"
-    ]
-  },
-  "digital-literacy-camp-2025": {
-    "fullDescription": "Access to digital skills is no longer optional — it is the foundation of future employment and civic participation. The Digital Literacy Camp is a 5-day intensive programme for 200 rural youth between the ages of 14–22. Participants are taught basic computing, touch-typing, internet research, email communication, and introductory coding using Scratch and Python. Sessions also cover digital safety, understanding misinformation, and using digital tools for entrepreneurship. The camp is conducted at Karamsthali's fully equipped tech hub in Ajmer, with laptops and internet access provided free of charge.",
-    "highlights": [
-      "Basic computing and touch-typing fundamentals",
-      "Internet research and safe browsing practices",
-      "Email communication and office productivity tools",
-      "Introduction to Scratch and Python programming",
-      "Digital safety and identifying misinformation",
-      "Using e-commerce and digital platforms for business"
-    ],
-    "agenda": [
-      { "time": "Day 1", "activity": "Computer Basics & Internet Fundamentals" },
-      { "time": "Day 2", "activity": "Office Tools: Word, Excel, and Presentations" },
-      { "time": "Day 3", "activity": "Digital Safety & Smart Internet Use" },
-      { "time": "Day 4", "activity": "Introduction to Coding with Scratch & Python" },
-      { "time": "Day 5", "activity": "Digital Entrepreneurship & Certification" }
-    ],
-    "organizer": "Karamsthali NGO Tech & Education Cell",
-    "contact": "tech@karamsthali.org",
-    "registrationRequired": true,
-    "gallery": [
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+      "/community-meal-drive.jpeg",
+      "/Why-Choose-Us-2.jpeg"
     ]
   }
 }

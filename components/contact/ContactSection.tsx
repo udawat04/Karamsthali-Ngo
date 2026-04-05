@@ -10,7 +10,9 @@ import {
   Linkedin,
   Twitter,
   MoveUpRight,
+  Facebook,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function ContactSection() {
   const contactMethods = [
@@ -47,9 +49,15 @@ export default function ContactSection() {
   ];
 
   const socials = [
-    { icon: <Instagram className="size-5" />, href: "#", label: "Instagram" },
-    { icon: <Linkedin className="size-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Twitter className="size-5" />, href: "#", label: "Twitter" },
+    {
+      Icon: Facebook,
+      href: "https://www.facebook.com/share/18ar2s5ir4/?mibextid=wwXIfr",
+    },
+    {
+      Icon: Instagram,
+      href: "https://www.instagram.com/karmasthalisansthan?igsh=ajhsdnYwcGlpeDE4",
+    },
+    { Icon: MessageCircle, href: "https://wa.me/919772403688" },
   ];
 
   return (
@@ -59,9 +67,11 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
             {/* ── LEFT: Visual Image ── */}
             <div className="relative rounded-[1.5rem] overflow-hidden group min-h-[400px] lg:h-full">
-              <img
-                src="https://html.awaikenthemes.com/aasha/images/contact-us-image.jpg"
+              <Image
+                src="/about-4.png"
                 alt="Karmasthali Sansthan"
+                width={200} 
+                height={180}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-[#0B3C5D]/10 group-hover:bg-transparent transition-colors duration-500" />
@@ -126,9 +136,9 @@ export default function ContactSection() {
                       key={idx}
                       href={social.href}
                       className="p-4 rounded-xl bg-[#0B3C5D] text-white hover:bg-[#F4B400] hover:text-[#0B3C5D] transition-all duration-300 shadow-lg shadow-blue-900/10 hover:-translate-y-1"
-                      aria-label={social.label}
+                      aria-label={social.Icon.name}
                     >
-                      {social.icon}
+                      <social.Icon className="size-5" />
                     </a>
                   ))}
                 </div>

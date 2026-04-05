@@ -3,10 +3,24 @@ import ContactSection from "@/components/contact/ContactSection";
 import PageHeader from "@/components/common/PageHeader";
 import FAQ from "@/components/common/FAQ";
 
-export const metadata = {
-  title: "Our Services | Karamsthali NGO",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "NGO Services in Udaipur | Community Development Programs | Karmasthali Sansthan",
   description:
-    "Explore all the services and programs run by Karamsthali NGO — community development, education, human rights, healthcare, women empowerment, and environmental sustainability.",
+    "Explore NGO services in Udaipur: community development, education awareness, health support & human rights advocacy programs by Karmasthali Sansthan.",
+  keywords:
+    "NGO services Udaipur, Community development programs, Education NGO Udaipur, Health services, Social services Udaipur",
+  alternates: {
+    canonical: "https://karmasthalisansthan.org/services",
+  },
+  openGraph: {
+    title: "NGO Services in Udaipur | Karmasthali Sansthan",
+    description:
+      "Community development, education, health & advocacy services by NGO Udaipur",
+    url: "https://karmasthalisansthan.org/services",
+  },
 };
 
 export default function ServicesPage() {

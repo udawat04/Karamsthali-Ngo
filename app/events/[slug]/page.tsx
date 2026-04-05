@@ -5,7 +5,6 @@ import {
   Calendar,
   MapPin,
   Clock,
-  Users,
   ArrowLeft,
   ArrowUpRight,
   CheckCircle2,
@@ -13,6 +12,7 @@ import {
   Building2,
   Bookmark,
   ChevronRight,
+  Phone,
 } from "lucide-react";
 import eventsData from "@/data/events.json";
 import eventsDetail from "@/data/events-detail.json";
@@ -36,21 +36,17 @@ type EventDetailMap = Record<string, EventDetail>;
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 const CATEGORY_COLORS: Record<string, string> = {
-  Healthcare:           "bg-rose-100 text-rose-700 border-rose-200",
-  "Women Empowerment":  "bg-purple-100 text-purple-700 border-purple-200",
-  Education:            "bg-blue-100 text-blue-700 border-blue-200",
-  Environment:          "bg-blue-50 text-blue-700 border-blue-100", // Replaced green with blue
-  "Human Rights":       "bg-amber-100 text-amber-700 border-amber-200",
-  Fundraising:          "bg-yellow-100 text-yellow-800 border-yellow-200",
+  "Feeding the Needy":   "bg-orange-100 text-orange-700 border-orange-200",
+  "Cow Welfare & Care":  "bg-green-100 text-green-700 border-green-200",
+  "Empowering Children": "bg-blue-100 text-blue-700 border-blue-200",
+  "Feeding Street Dogs": "bg-amber-100 text-amber-700 border-amber-200",
 };
 
 const CATEGORY_ACCENT: Record<string, string> = {
-  Healthcare:           "bg-rose-500",
-  "Women Empowerment":  "bg-purple-500",
-  Education:            "bg-blue-500",
-  Environment:          "bg-blue-600", // Replaced green with blue
-  "Human Rights":       "bg-amber-500",
-  Fundraising:          "bg-primary",
+  "Feeding the Needy":   "bg-orange-500",
+  "Cow Welfare & Care":  "bg-green-500",
+  "Empowering Children": "bg-blue-500",
+  "Feeding Street Dogs": "bg-amber-500",
 };
 
 function formatDate(dateStr: string) {
@@ -157,15 +153,11 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
               </span>
               <span className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary shrink-0" />
-                {event.location}
+                {event.ngoLocation}
               </span>
-              <span className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-primary shrink-0" />
-                {event.time}
-              </span>
-              <span className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-primary shrink-0" />
-                {event.attendees.toLocaleString()}+ expected
+              <span className="flex items-center gap-2 text-white/90">
+                <Phone className="w-4 h-4 text-primary shrink-0" />
+                <a href={`tel:${event.contactNumber.replace(/\s+/g, '')}`} className="hover:text-primary transition-colors">{event.contactNumber}</a>
               </span>
             </div>
             
@@ -249,11 +241,11 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
                   </ul>
                 </div>
 
-                {/* ── Event Schedule ── */}
+                {/* ── Suggested Seva Timeline ── */}
                 <div>
                   <div className="flex items-center gap-3 mb-8">
                     <div className={`w-1 h-8 rounded-full ${catAccent}`} />
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-brand-dark">Event Schedule</h2>
+                    <h2 className="text-2xl md:text-3xl font-extrabold text-brand-dark">How to Contribute</h2>
                   </div>
                   <div className="relative space-y-0">
                     {/* Vertical line */}
@@ -379,18 +371,21 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
                   {/* Event detail rows */}
                   <div className="p-7 space-y-5">
                     {[
-                      { Icon: Clock,     label: "Time",              value: event.time },
-                      { Icon: MapPin,    label: "Venue",             value: event.location },
-                      { Icon: Users,     label: "Expected Attendees",value: `${event.attendees.toLocaleString()}+` },
+                      { Icon: MapPin,    label: "Head Office",       value: event.ngoLocation },
+                      { Icon: Phone,     label: "Contact No.",       value: event.contactNumber, isLink: true, href: `tel:${event.contactNumber.replace(/\s+/g, '')}` },
                       { Icon: Building2, label: "Organiser",         value: detail.organizer },
-                    ].map(({ Icon, label, value }) => (
+                    ].map(({ Icon, label, value, isLink, href }) => (
                       <div key={label} className="flex items-start gap-3.5">
                         <div className="size-9 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                           <Icon className="w-4 h-4 text-primary" />
                         </div>
                         <div>
                           <div className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">{label}</div>
-                          <div className="text-brand-dark font-semibold text-sm">{value}</div>
+                          {isLink ? (
+                            <a href={href} className="text-brand-dark font-semibold text-sm hover:text-primary transition-colors">{value}</a>
+                          ) : (
+                            <div className="text-brand-dark font-semibold text-sm">{value}</div>
+                          )}
                         </div>
                       </div>
                     ))}
@@ -509,13 +504,9 @@ export default async function EventDetailPage({ params }: { params: Promise<{ sl
                         </h3>
                         <div className="flex items-center gap-1.5 text-gray-400 text-xs mb-3">
                           <MapPin className="w-3.5 h-3.5 text-primary" />
-                          <span className="line-clamp-1">{rel.location}</span>
+                          <span className="line-clamp-1">{rel.ngoLocation}</span>
                         </div>
-                        <div className="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
-                          <div className="flex items-center gap-1.5 text-gray-400 text-xs">
-                            <Users className="w-3.5 h-3.5" />
-                            {rel.attendees.toLocaleString()}+ expected
-                          </div>
+                        <div className="mt-auto pt-3 border-t border-gray-100 flex items-center justify-end">
                           <span className="inline-flex items-center gap-1 text-primary font-bold text-xs group-hover:gap-1.5 transition-all">
                             View Details <ArrowUpRight className="w-3.5 h-3.5" />
                           </span>

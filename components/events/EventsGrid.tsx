@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, MapPin, Users, ArrowUpRight } from "lucide-react";
+import { Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { CATEGORY_COLORS, getDayMonth } from "./EventsHero";
 
 interface Event {
@@ -9,11 +9,10 @@ interface Event {
   title: string;
   category: string;
   date: string;
-  time: string;
-  location: string;
+  contactNumber: string;
+  ngoLocation: string;
   thumbnail: string;
   shortDescription: string;
-  attendees: number;
 }
 
 interface EventsGridProps {
@@ -83,12 +82,12 @@ export default function EventsGrid({ events }: EventsGridProps) {
 
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center gap-2 text-gray-500 text-sm">
-                      <Clock className="w-4 h-4 text-primary shrink-0" />
-                      {event.time}
+                      <Phone className="w-4 h-4 text-primary shrink-0" />
+                      {event.contactNumber}
                     </div>
                     <div className="flex items-center gap-2 text-gray-500 text-sm">
                       <MapPin className="w-4 h-4 text-primary shrink-0" />
-                      <span className="line-clamp-1">{event.location}</span>
+                      <span className="line-clamp-1">{event.ngoLocation}</span>
                     </div>
                   </div>
 
@@ -96,13 +95,9 @@ export default function EventsGrid({ events }: EventsGridProps) {
                     {event.shortDescription}
                   </p>
 
-                  <div className="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
-                    <div className="flex items-center gap-1.5 text-gray-400 text-xs">
-                      <Users className="w-3.5 h-3.5" />
-                      {event.attendees.toLocaleString()}+ expected
-                    </div>
-                    <span className="inline-flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">
-                      Register / Details
+                  <div className="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto text-right">
+                    <span className="inline-flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all ml-auto">
+                      View Details
                       <ArrowUpRight className="w-4 h-4 transition-transform group-hover:rotate-45" />
                     </span>
                   </div>

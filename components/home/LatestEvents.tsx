@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
-import { ArrowLeft, ArrowRight, ArrowUpRight, Calendar, MapPin, Clock, Users } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Calendar, MapPin, Phone } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,12 +13,10 @@ import "swiper/css/navigation";
 import eventsData from "@/data/events.json";
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Healthcare: "bg-rose-100 text-rose-700",
-  "Women Empowerment": "bg-purple-100 text-purple-700",
-  Education: "bg-blue-100 text-blue-700",
-  Environment: "bg-green-100 text-green-700",
-  "Human Rights": "bg-amber-100 text-amber-700",
-  Fundraising: "bg-yellow-100 text-yellow-800",
+  "Feeding the Needy":   "bg-orange-100 text-orange-700",
+  "Cow Welfare & Care":  "bg-green-100 text-green-700",
+  "Empowering Children": "bg-blue-100 text-blue-700",
+  "Feeding Street Dogs": "bg-amber-100 text-amber-700",
 };
 
 function formatDate(dateStr: string) {
@@ -104,7 +102,7 @@ export default function LatestEvents() {
                       src={event.thumbnail}
                       alt={event.title}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-fit transition-transform duration-700 group-hover:scale-110"
                       sizes="(max-width: 768px) 100vw, 420px"
                     />
                     {/* Category badge */}
@@ -130,12 +128,12 @@ export default function LatestEvents() {
                         <span>{formatDate(event.date)}</span>
                       </div>
                       <div className="flex items-center gap-2 text-gray-500 text-sm">
-                        <Clock className="w-4 h-4 text-primary shrink-0" />
-                        <span>{event.time}</span>
+                        <Phone className="w-4 h-4 text-primary shrink-0" />
+                        <span>{event.contactNumber}</span>
                       </div>
                       <div className="flex items-center gap-2 text-gray-500 text-sm">
                         <MapPin className="w-4 h-4 text-primary shrink-0" />
-                        <span className="line-clamp-1">{event.location}</span>
+                        <span className="line-clamp-1">{event.ngoLocation}</span>
                       </div>
                     </div>
 
@@ -144,13 +142,9 @@ export default function LatestEvents() {
                     </p>
 
                     {/* Footer */}
-                    <div className="flex items-center justify-between border-t border-gray-100 pt-4">
-                      <div className="flex items-center gap-1.5 text-gray-400 text-xs">
-                        <Users className="w-3.5 h-3.5" />
-                        <span>{event.attendees.toLocaleString()}+ expected</span>
-                      </div>
+                    <div className="flex items-center justify-end border-t border-gray-100 pt-4">
                       <span className="inline-flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">
-                        Details <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" />
+                        View Details <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:rotate-45" />
                       </span>
                     </div>
                   </div>
