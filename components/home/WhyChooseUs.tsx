@@ -160,7 +160,7 @@ export default function WhyChooseUs() {
 
             {/* --- CLICKABLE CALL CARD --- */}
             <a
-              href="tel:+919876543210"
+              href="tel:+916376906858"
               className="absolute top-[-30px] right-0 lg:right-auto lg:left-[-20px] bg-white rounded-2xl p-4 shadow-[0_20px_50px_rgba(0,0,0,0.1)] z-40 flex items-center gap-4 min-w-[210px] border border-gray-100 hover:scale-105 transition-all duration-300 group"
             >
               <div className="size-12 rounded-xl bg-primary flex items-center justify-center shrink-0 shadow-inner group-hover:bg-brand-dark transition-colors duration-300">
@@ -171,7 +171,7 @@ export default function WhyChooseUs() {
                   Connect Now
                 </p>
                 <p className="font-extrabold text-brand-dark text-base whitespace-nowrap">
-                  +91 98765 43210
+                  +91 63769 06858
                 </p>
               </div>
             </a>
