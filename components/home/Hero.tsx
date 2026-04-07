@@ -101,7 +101,7 @@ export default function HeroSection() {
             </div>
 
             {/* Main Content Container */}
-            <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 flex items-center pt-24 pb-20 xl:pt-28">
+            <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 flex items-center pt-40 pb-20 xl:pt-28">
               <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
                 {/* Left Side: Text */}
                 <div className="flex flex-col items-start space-y-6 lg:space-y-8">
@@ -189,7 +189,7 @@ export default function HeroSection() {
         ))}
 
         {/* Navigation Buttons */}
-        <div className="absolute bottom-10 left-[35%] lg:left-[40%] z-[70]">
+        <div className=" hidden lg:block absolute bottom-10 left-[35%] lg:left-[40%] z-[70]">
           <SwiperNavButtons />
         </div>
       </Swiper>

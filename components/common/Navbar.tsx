@@ -151,22 +151,22 @@ export default function Navbar() {
         <SheetContent
           side="right"
           className={cn(
-            "w-[min(300px,86vw)] bg-brand-dark p-0 flex flex-col",
+            "w-[min(300px,86vw)] bg-brand-dark pt-4 pb-4 flex flex-col",
             "border-l border-white/[0.07]",
             "[&>button]:hidden", // hide shadcn's default close btn
           )}
         >
           {/* Drawer header */}
-          <SheetHeader className="flex-row items-center justify-between px-5 h-[72px] shrink-0 border-b border-white/[0.07] space-y-0">
+          <SheetHeader className="flex-row items-center justify-between px-5 h-[82px] shrink-0 border-b border-white/[0.07] space-y-0">
             <SheetTitle asChild>
-              <Link href="/" onClick={closeSheet} className="flex items-center">
+              <Link href="/" onClick={closeSheet} className="flex items-start">
                 <Image
-                  src="/karm-logo.jpeg"
+                  src="/karma-logo-3.png"
                   alt="Aasha"
-                  width={110}
-                  height={34}
+                  width={180}
+                  height={100}
                   unoptimized
-                  className="h-8 w-auto"
+                  className="h-22 w-auto max-md:h-20"
                 />
               </Link>
             </SheetTitle>
